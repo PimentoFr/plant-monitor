@@ -930,12 +930,8 @@ F 3 "~" H 9100 5750 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9200 5750 9350 5750
-Text Label 8500 5350 0    50   ~ 0
-LED_RED
 Text Label 8500 5550 0    50   ~ 0
 LED_GREEN
-Text Label 8500 5750 0    50   ~ 0
-LED_BLUE
 Wire Notes Line
 	8250 4250 8250 5950
 Wire Notes Line
@@ -1546,13 +1542,13 @@ Wire Wire Line
 	1300 2500 1900 2500
 Wire Wire Line
 	1900 2600 1300 2600
-Text Label 1300 2500 0    50   ~ 0
+Text Label 5100 1900 0    50   ~ 0
 LED_RED
 Text Label 1300 2600 0    50   ~ 0
 LED_GREEN
 Wire Wire Line
 	5000 1900 5100 1900
-Text Label 5100 1900 0    50   ~ 0
+Text Label 1300 2500 0    50   ~ 0
 LED_BLUE
 Wire Wire Line
 	5000 2200 5100 2200
@@ -1880,4 +1876,8 @@ Wire Wire Line
 	2100 2700 2150 2700
 Wire Wire Line
 	1900 2700 1750 2700
+Text Label 8500 5750 0    50   ~ 0
+LED_BLUE
+Text Label 8500 5350 0    50   ~ 0
+LED_RED
 $EndSCHEMATC

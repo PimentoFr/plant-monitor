@@ -19,7 +19,7 @@ U 1 1 5FCA1285
 P 6200 3100
 F 0 "U9" H 6200 4281 50  0000 C CNN
 F 1 "WSSFM10R1AT" H 6200 4190 50  0000 C CNN
-F 2 "sweet:XCVR_WSSFM10R1AT" H 6200 3300 50  0001 L BNN
+F 2 "plant_monitor:XCVR_WSSFM10R1AT_HANDSOLDER" H 6200 3300 50  0001 L BNN
 F 3 "https://yadom.fr/media/product-attachment//home/magento///File-1572880994.pdf" H 6200 3300 50  0001 L BNN
 	1    6200 3100
 	1    0    0    -1  
@@ -646,19 +646,6 @@ F 4 "939-1066-1-ND" H 9250 1750 50  0001 C CNN "digikey"
 $EndComp
 $Comp
 L Device:R_Small R?
-U 1 1 5FD3A629
-P 8700 1750
-AR Path="/5FC09B33/5FD3A629" Ref="R?"  Part="1" 
-AR Path="/5FCA0FE0/5FD3A629" Ref="R88"  Part="1" 
-F 0 "R88" V 8800 1600 50  0000 C CNN
-F 1 "0R" V 8800 1900 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 8700 1750 50  0001 C CNN
-F 3 "~" H 8700 1750 50  0001 C CNN
-	1    8700 1750
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R_Small R?
 U 1 1 5FD3C9BB
 P 9850 1750
 AR Path="/5FC09B33/5FD3C9BB" Ref="R?"  Part="1" 
@@ -756,8 +743,6 @@ Text Label 4550 1950 0    50   ~ 0
 VDD_SIGFOX
 Wire Wire Line
 	4850 1950 4550 1950
-Wire Wire Line
-	8850 1750 8800 1750
 Wire Notes Line
 	3750 850  10550 850 
 Wire Notes Line
@@ -840,8 +825,6 @@ $EndComp
 Wire Wire Line
 	7900 1800 7900 1750
 Connection ~ 7900 1750
-Wire Wire Line
-	7900 1750 8600 1750
 Wire Wire Line
 	1650 1500 2150 1500
 Text HLabel 1650 1500 0    50   Input ~ 0
@@ -934,4 +917,6 @@ Wire Notes Line
 	2000 7350 2000 6150
 Text Notes 2150 6250 0    50   ~ 0
 Mounting holes
+Wire Wire Line
+	7900 1750 8850 1750
 $EndSCHEMATC
