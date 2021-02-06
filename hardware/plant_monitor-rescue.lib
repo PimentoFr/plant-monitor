@@ -1,0 +1,21 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# SMM4F5.0A-TR-plant_monitor
+#
+DEF SMM4F5.0A-TR-plant_monitor D 0 40 N N 1 F N
+F0 "D" -100 150 50 H V L BNN
+F1 "SMM4F5.0A-TR-plant_monitor" -250 -200 50 H V L BNN
+F2 "DIO_SMM4F5.0A-TR" -100 0 50 H I L BNN
+F3 "" -100 0 50 H I L BNN
+F4 "1689313" 0 0 50 H I C CNN "farnell"
+DRAW
+P 2 1 1 0 50 75 75 100 N
+P 3 1 1 0 50 75 50 -75 25 -100 N
+P 4 1 1 0 -50 100 -50 -100 50 0 -50 100 N
+X 1 A -150 0 100 R 50 50 1 1 P
+X 1 K 150 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+#End Library

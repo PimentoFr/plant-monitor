@@ -1,0 +1,63 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 1264EY-220M=P3
+D Inductances de Puissance (CMS), 22 µH, 1.8 A, Bobiné, 2.3 A, DG6050C Series, 6mm x 6mm x 5mm
+F http://www.farnell.com/datasheets/2616905.pdf
+$ENDCMP
+#
+$CMP 155124M173200
+D LED angle droit, Rouge, Vert, Bleu, CMS, 120 °, Dôme, R 20mA, G 20mA, B 20mA
+F http://www.farnell.com/datasheets/2301733.pdf
+$ENDCMP
+#
+$CMP EVQP7A01K
+D Commutateur tactile, EVQP7 Series, Commande latérale, Montage en surface, Bouton rectangulaire
+F http://www.farnell.com/datasheets/1520562.pdf
+$ENDCMP
+#
+$CMP MCP9808T-E_MS
+D CI de capteur de température, Drain ouvert, ± 1°C, -40 °C, 125 °C, MSOP, 8 Broche(s)
+F http://ww1.microchip.com/downloads/en/DeviceDoc/25095A.pdf
+$ENDCMP
+#
+$CMP MS563702BA03-50
+D Capteur de pression, Barométrique, 300 mbar, 1200 mbar, 1.8 V, 3.6 V
+F http://www.farnell.com/datasheets/2917209.pdf
+$ENDCMP
+#
+$CMP QTP732.76812B20R
+D Cristal, 32.768 kHz, CMS, 6.9mm x 1.4mm, 12.5 pF, 20 ppm, QTP7 Series
+F http://www.farnell.com/datasheets/1998801.pdf
+$ENDCMP
+#
+$CMP SHTC3
+D CAPTEUR HUMIDITE/TEMP, DFN-4
+F http://www.farnell.com/datasheets/2829053.pdf
+$ENDCMP
+#
+$CMP SI1133-AA00-GMR
+D Capteur lumière ambiante, Sortie I2C, Sensibilité crête 625nm, Alim. 1,62V à 3,6V DFN-10
+F http://www.farnell.com/datasheets/2311618.pdf
+$ENDCMP
+#
+$CMP SMM4F5.0A-TR
+D Diode TVS, Transil SMM4F Series, Unidirectionelle, 5 V, 9.2 V, DO-216AA, 2 Broche(s)
+F https://www.mouser.fr/datasheet/2/389/smm4f10a-1849921.pdf
+$ENDCMP
+#
+$CMP SPV1040T
+D Chargeur de batterie, batterie solaire, Entrée 0,3V à 5,5V, charge 5,2V/1,8A, PWM 100 kHz, TSSOP-8
+F https://www.st.com/resource/en/datasheet/spv1040.pdf
+$ENDCMP
+#
+$CMP STM32L071KBT6
+D MCU ARM, STM32 Family STM32L0 Series Microcontrollers, ARM Cortex-M0+, 32 bits, 32 MHz, 128 KB
+F https://www.st.com/resource/en/datasheet/stm32l071kb.pdf
+$ENDCMP
+#
+$CMP TPS63050RMWR
+D Régulateur à découpage DC/DC Buck Boost, Ajustable, 2.5 V-5.5Vin, 2.5.5Vout, 500mAout, VQFN-12
+F https://www.ti.com/lit/ds/symlink/tps63050.pdf?ts=1606205820084&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FTPS63050
+$ENDCMP
+#
+#End Doc Library
