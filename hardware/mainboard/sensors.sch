@@ -1076,65 +1076,6 @@ Wire Wire Line
 Connection ~ 7200 5100
 Wire Wire Line
 	7200 5100 7300 5100
-$Comp
-L Connector:Conn_01x03_Male J2
-U 1 1 5FEF9951
-P 9950 5550
-F 0 "J2" H 10058 5831 50  0000 C CNN
-F 1 "Conn_01x03_Male" H 10058 5740 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal" H 9950 5550 50  0001 C CNN
-F 3 "~" H 9950 5550 50  0001 C CNN
-	1    9950 5550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10150 5450 10300 5450
-Wire Wire Line
-	10300 5450 10300 5650
-Wire Wire Line
-	10150 5650 10300 5650
-Connection ~ 10300 5650
-Wire Wire Line
-	10300 5650 10300 5950
-$Comp
-L Device:C_Small C6
-U 1 1 5FF1E593
-P 10550 5700
-F 0 "C6" H 10642 5746 50  0000 L CNN
-F 1 "PROBE" H 10642 5655 50  0000 L CNN
-F 2 "plant_monitor:HYGRO_PROBE" H 10550 5700 50  0001 C CNN
-F 3 "~" H 10550 5700 50  0001 C CNN
-	1    10550 5700
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR019
-U 1 1 5FF12B28
-P 10300 5950
-F 0 "#PWR019" H 10300 5700 50  0001 C CNN
-F 1 "GND" H 10305 5777 50  0000 C CNN
-F 2 "" H 10300 5950 50  0001 C CNN
-F 3 "" H 10300 5950 50  0001 C CNN
-	1    10300 5950
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR020
-U 1 1 5FF26268
-P 10550 5950
-F 0 "#PWR020" H 10550 5700 50  0001 C CNN
-F 1 "GND" H 10555 5777 50  0000 C CNN
-F 2 "" H 10550 5950 50  0001 C CNN
-F 3 "" H 10550 5950 50  0001 C CNN
-	1    10550 5950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10550 5950 10550 5800
-Wire Wire Line
-	10150 5550 10550 5550
-Wire Wire Line
-	10550 5550 10550 5600
 Wire Wire Line
 	10050 4500 10500 4500
 Wire Wire Line
@@ -1167,14 +1108,4 @@ Text Notes 4650 3800 0    50   ~ 0
 Soil moisture sensor
 Text Notes 4800 4650 0    50   ~ 0
 1 - 1.5 MHz
-Wire Notes Line
-	9300 5050 11150 5050
-Wire Notes Line
-	11150 5050 11150 6300
-Wire Notes Line
-	11150 6300 9300 6300
-Wire Notes Line
-	9300 6300 9300 5050
-Text Notes 9350 5150 0    50   ~ 0
-Soil Moisture Probe
 $EndSCHEMATC

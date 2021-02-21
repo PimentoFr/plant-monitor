@@ -919,4 +919,47 @@ Text Notes 2150 6250 0    50   ~ 0
 Mounting holes
 Wire Wire Line
 	7900 1750 8850 1750
+$Comp
+L Mechanical:MountingHole H5
+U 1 1 6026F1A3
+P 4600 6650
+F 0 "H5" H 4700 6696 50  0000 L CNN
+F 1 "M2.5" H 4700 6605 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 4600 6650 50  0001 C CNN
+F 3 "~" H 4600 6650 50  0001 C CNN
+	1    4600 6650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H6
+U 1 1 6026F1A9
+P 5250 6650
+F 0 "H6" H 5350 6696 50  0000 L CNN
+F 1 "M2.5" H 5350 6605 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 5250 6650 50  0001 C CNN
+F 3 "~" H 5250 6650 50  0001 C CNN
+	1    5250 6650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H7
+U 1 1 6026F1AF
+P 4600 7050
+F 0 "H7" H 4700 7096 50  0000 L CNN
+F 1 "M2.5" H 4700 7005 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 4600 7050 50  0001 C CNN
+F 3 "~" H 4600 7050 50  0001 C CNN
+	1    4600 7050
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	4100 6150 6050 6150
+Wire Notes Line
+	6050 6150 6050 7350
+Wire Notes Line
+	6050 7350 4100 7350
+Wire Notes Line
+	4100 7350 4100 6150
+Text Notes 4250 6250 0    50   ~ 0
+Solar panel holes
 $EndSCHEMATC

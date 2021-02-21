@@ -1,0 +1,3285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>G:\Stream-contenu\06_Plant_Monitor\plant-monitor\hardware\plant_monitor.sch</source>
+    <date>07/02/2021 00:46:14</date>
+    <tool>Eeschema (5.1.6)-1</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>plant_monitor.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="2" name="/sensors/" tstamps="/5FC09B33/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>sensors.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="3" name="/mcu/" tstamps="/5FD2DAC8/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>mcu.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="4" name="/power/" tstamps="/5FBD9002/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>power.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="5" name="/modem/" tstamps="/5FCA0FE0/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>modem.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="U1">
+      <value>MCP9808T-E_MS</value>
+      <footprint>plant_monitor:SOP65P490X110-8N</footprint>
+      <datasheet>http://ww1.microchip.com/downloads/en/DeviceDoc/25095A.pdf</datasheet>
+      <fields>
+        <field name="MANUFACTURER">Microchip</field>
+        <field name="farnell">2851677</field>
+      </fields>
+      <libsource lib="plant_monitor" part="MCP9808T-E_MS" description="CI de capteur de température, Drain ouvert, ± 1°C, -40 °C, 125 °C, MSOP, 8 Broche(s)"/>
+      <sheetpath names="/sensors/" tstamps="/5FC09B33/"/>
+      <tstamp>5FC09DCE</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>100nF 50V</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/sensors/" tstamps="/5FC09B33/"/>
+      <tstamp>5FC0DFBF</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>0R</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/sensors/" tstamps="/5FC09B33/"/>
+      <tstamp>5FC0FC85</tstamp>
+    </comp>
+    <comp ref="R9">
+      <value>0R</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/sensors/" tstamps="/5FC09B33/"/>
+      <tstamp>5FC1092E</tstamp>
+    </comp>
+    <comp ref="R12">
+      <value>0R</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/sensors/" tstamps="/5FC09B33/"/>
+      <tstamp>5FC10AE6</tstamp>
+    </comp>
+    <comp ref="R13">
+      <value>0R</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/sensors/" tstamps="/5FC09B33/"/>
+      <tstamp>5FC1381C</tstamp>
+    </comp>
+    <comp ref="R10">
+      <value>0R</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/sensors/" tstamps="/5FC09B33/"/>
+      <tstamp>5FC139D8</tstamp>
+    </comp>
+    <comp ref="R8">
+      <value>0R</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/sensors/" tstamps="/5FC09B33/"/>
+      <tstamp>5FC13ABF</tstamp>
+    </comp>
+    <comp ref="R4">
+      <value>100K</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/sensors/" tstamps="/5FC09B33/"/>
+      <tstamp>5FC18197</tstamp>
+    </comp>
+    <comp ref="R7">
+      <value>0R</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/sensors/" tstamps="/5FC09B33/"/>
+      <tstamp>5FC1BE42</tstamp>
+    </comp>
+    <comp ref="U2">
+      <value>SHTC3</value>
+      <footprint>plant_monitor:SHTC3</footprint>
+      <datasheet>http://www.farnell.com/datasheets/2829053.pdf</datasheet>
+      <fields>
+        <field name="farnell">3106918</field>
+      </fields>
+      <libsource lib="plant_monitor" part="SHTC3" description="CAPTEUR HUMIDITE/TEMP, DFN-4"/>
+      <sheetpath names="/sensors/" tstamps="/5FC09B33/"/>
+      <tstamp>5FC2C7E6</tstamp>
+    </comp>
+    <comp ref="C3">
+      <value>100nF 50V</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/sensors/" tstamps="/5FC09B33/"/>
+      <tstamp>5FC2F29B</tstamp>
+    </comp>
+    <comp ref="R14">
+      <value>0R</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/sensors/" tstamps="/5FC09B33/"/>
+      <tstamp>5FC339C1</tstamp>
+    </comp>
+    <comp ref="R16">
+      <value>0R</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/sensors/" tstamps="/5FC09B33/"/>
+      <tstamp>5FC33FC2</tstamp>
+    </comp>
+    <comp ref="R3">
+      <value>0R</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/sensors/" tstamps="/5FC09B33/"/>
+      <tstamp>5FC3A110</tstamp>
+    </comp>
+    <comp ref="U3">
+      <value>SI1133-AA00-GMR</value>
+      <footprint>plant_monitor:SI1133-AA00-GMR</footprint>
+      <datasheet>http://www.farnell.com/datasheets/2311618.pdf</datasheet>
+      <fields>
+        <field name="farnell">3105966</field>
+      </fields>
+      <libsource lib="plant_monitor" part="SI1133-AA00-GMR" description="Capteur lumière ambiante, Sortie I2C, Sensibilité crête 625nm, Alim. 1,62V à 3,6V DFN-10"/>
+      <sheetpath names="/sensors/" tstamps="/5FC09B33/"/>
+      <tstamp>5FC40A01</tstamp>
+    </comp>
+    <comp ref="R11">
+      <value>0R</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/sensors/" tstamps="/5FC09B33/"/>
+      <tstamp>5FC43781</tstamp>
+    </comp>
+    <comp ref="R15">
+      <value>0R</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/sensors/" tstamps="/5FC09B33/"/>
+      <tstamp>5FC43787</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value>0R</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/sensors/" tstamps="/5FC09B33/"/>
+      <tstamp>5FC467FA</tstamp>
+    </comp>
+    <comp ref="R6">
+      <value>100K</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/sensors/" tstamps="/5FC09B33/"/>
+      <tstamp>5FC4995C</tstamp>
+    </comp>
+    <comp ref="R5">
+      <value>100K</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/sensors/" tstamps="/5FC09B33/"/>
+      <tstamp>5FC4BA80</tstamp>
+    </comp>
+    <comp ref="R17">
+      <value>100K</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/sensors/" tstamps="/5FC09B33/"/>
+      <tstamp>5FC555AB</tstamp>
+    </comp>
+    <comp ref="C2">
+      <value>100nF 50V</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/sensors/" tstamps="/5FC09B33/"/>
+      <tstamp>5FC5BCF6</tstamp>
+    </comp>
+    <comp ref="U4">
+      <value>MS563702BA03-50</value>
+      <footprint>plant_monitor:TE_MS563702BA03-50</footprint>
+      <datasheet>http://www.farnell.com/datasheets/2917209.pdf</datasheet>
+      <fields>
+        <field name="Comment">MS563702BA03-50</field>
+        <field name="EU_RoHS_Compliance">Compliant</field>
+        <field name="farnell">2362663</field>
+      </fields>
+      <libsource lib="plant_monitor" part="MS563702BA03-50" description="Capteur de pression, Barométrique, 300 mbar, 1200 mbar, 1.8 V, 3.6 V"/>
+      <sheetpath names="/sensors/" tstamps="/5FC09B33/"/>
+      <tstamp>5FC6DCD5</tstamp>
+    </comp>
+    <comp ref="C4">
+      <value>100nF 50V</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/sensors/" tstamps="/5FC09B33/"/>
+      <tstamp>5FC6F2AD</tstamp>
+    </comp>
+    <comp ref="R19">
+      <value>0R</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/sensors/" tstamps="/5FC09B33/"/>
+      <tstamp>5FC741FA</tstamp>
+    </comp>
+    <comp ref="R22">
+      <value>0R</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/sensors/" tstamps="/5FC09B33/"/>
+      <tstamp>5FC76972</tstamp>
+    </comp>
+    <comp ref="R23">
+      <value>0R</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/sensors/" tstamps="/5FC09B33/"/>
+      <tstamp>5FC76978</tstamp>
+    </comp>
+    <comp ref="TP2">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <sheetpath names="/sensors/" tstamps="/5FC09B33/"/>
+      <tstamp>5FCB6BBD</tstamp>
+    </comp>
+    <comp ref="TP1">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <sheetpath names="/sensors/" tstamps="/5FC09B33/"/>
+      <tstamp>5FCBCCC1</tstamp>
+    </comp>
+    <comp ref="R18">
+      <value>0R</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/sensors/" tstamps="/5FC09B33/"/>
+      <tstamp>5FE0C1A9</tstamp>
+    </comp>
+    <comp ref="R25">
+      <value>10K</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/sensors/" tstamps="/5FC09B33/"/>
+      <tstamp>5FE19DEA</tstamp>
+    </comp>
+    <comp ref="R24">
+      <value>10K</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/sensors/" tstamps="/5FC09B33/"/>
+      <tstamp>5FE1E91B</tstamp>
+    </comp>
+    <comp ref="D1">
+      <value>BAT54W</value>
+      <footprint>Package_TO_SOT_SMD:SOT-323_SC-70</footprint>
+      <datasheet>https://assets.nexperia.com/documents/data-sheet/BAT54W_SER.pdf</datasheet>
+      <fields>
+        <field name="farnell">1081197</field>
+      </fields>
+      <libsource lib="Diode" part="BAT54W" description="Schottky barrier diode, SOT-323"/>
+      <sheetpath names="/sensors/" tstamps="/5FC09B33/"/>
+      <tstamp>5FE3DE7A</tstamp>
+    </comp>
+    <comp ref="R26">
+      <value>1M</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/sensors/" tstamps="/5FC09B33/"/>
+      <tstamp>5FE3F9AF</tstamp>
+    </comp>
+    <comp ref="C5">
+      <value>10uF 16V</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="farnell">3013487</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/sensors/" tstamps="/5FC09B33/"/>
+      <tstamp>5FE4244E</tstamp>
+    </comp>
+    <comp ref="Q1">
+      <value>BSS84</value>
+      <footprint>digikey-footprints:SOT-23-3</footprint>
+      <datasheet>https://www.onsemi.com/pub/Collateral/BSS84-D.PDF</datasheet>
+      <fields>
+        <field name="Category">Discrete Semiconductor Products</field>
+        <field name="DK_Datasheet_Link">https://www.onsemi.com/pub/Collateral/BSS84-D.PDF</field>
+        <field name="DK_Detail_Page">/product-detail/en/on-semiconductor/BSS84/BSS84CT-ND/244297</field>
+        <field name="Description">MOSFET P-CH 50V 130MA SOT-23</field>
+        <field name="Digi-Key_PN">BSS84CT-ND</field>
+        <field name="Family">Transistors - FETs, MOSFETs - Single</field>
+        <field name="MPN">BSS84</field>
+        <field name="Manufacturer">ON Semiconductor</field>
+        <field name="Status">Active</field>
+      </fields>
+      <libsource lib="dk_Transistors-FETs-MOSFETs-Single" part="BSS84" description="MOSFET P-CH 50V 130MA SOT-23"/>
+      <sheetpath names="/sensors/" tstamps="/5FC09B33/"/>
+      <tstamp>5FE7A0FA</tstamp>
+    </comp>
+    <comp ref="R20">
+      <value>1M</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/sensors/" tstamps="/5FC09B33/"/>
+      <tstamp>5FE9B26B</tstamp>
+    </comp>
+    <comp ref="R21">
+      <value>1K</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/sensors/" tstamps="/5FC09B33/"/>
+      <tstamp>5FEA8240</tstamp>
+    </comp>
+    <comp ref="J1">
+      <value>Conn_01x03_Female</value>
+      <footprint>Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="Conn_01x03_Female" description="Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/sensors/" tstamps="/5FC09B33/"/>
+      <tstamp>5FED1EAD</tstamp>
+    </comp>
+    <comp ref="J2">
+      <value>Conn_01x03_Male</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="Conn_01x03_Male" description="Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/sensors/" tstamps="/5FC09B33/"/>
+      <tstamp>5FEF9951</tstamp>
+    </comp>
+    <comp ref="C6">
+      <value>PROBE</value>
+      <footprint>plant_monitor:HYGRO_PROBE</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/sensors/" tstamps="/5FC09B33/"/>
+      <tstamp>5FF1E593</tstamp>
+    </comp>
+    <comp ref="U5">
+      <value>STM32L071KBT6</value>
+      <footprint>plant_monitor:STM32L071KBT6</footprint>
+      <datasheet>https://www.st.com/resource/en/datasheet/stm32l071kb.pdf</datasheet>
+      <fields>
+        <field name="farnell">3365397</field>
+      </fields>
+      <libsource lib="plant_monitor" part="STM32L071KBT6" description="MCU ARM, STM32 Family STM32L0 Series Microcontrollers, ARM Cortex-M0+, 32 bits, 32 MHz, 128 KB"/>
+      <sheetpath names="/mcu/" tstamps="/5FD2DAC8/"/>
+      <tstamp>5FD302A4</tstamp>
+    </comp>
+    <comp ref="X1">
+      <value>QTP732.76812B20R</value>
+      <footprint>plant_monitor:QTP732.76812B20R</footprint>
+      <datasheet>http://www.farnell.com/datasheets/1998801.pdf</datasheet>
+      <fields>
+        <field name="farnell">2508436</field>
+      </fields>
+      <libsource lib="plant_monitor" part="QTP732.76812B20R" description="Cristal, 32.768 kHz, CMS, 6.9mm x 1.4mm, 12.5 pF, 20 ppm, QTP7 Series"/>
+      <sheetpath names="/mcu/" tstamps="/5FD2DAC8/"/>
+      <tstamp>5FD37AE0</tstamp>
+    </comp>
+    <comp ref="C12">
+      <value>12pF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/mcu/" tstamps="/5FD2DAC8/"/>
+      <tstamp>5FD423EC</tstamp>
+    </comp>
+    <comp ref="C13">
+      <value>12pF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/mcu/" tstamps="/5FD2DAC8/"/>
+      <tstamp>5FD44522</tstamp>
+    </comp>
+    <comp ref="R48">
+      <value>1M</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/mcu/" tstamps="/5FD2DAC8/"/>
+      <tstamp>5FD47523</tstamp>
+    </comp>
+    <comp ref="C14">
+      <value>100nF 50V</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/mcu/" tstamps="/5FD2DAC8/"/>
+      <tstamp>5FD48AA2</tstamp>
+    </comp>
+    <comp ref="FB1">
+      <value>Ferrite_Bead</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="Ferrite_Bead" description="Ferrite bead"/>
+      <sheetpath names="/mcu/" tstamps="/5FD2DAC8/"/>
+      <tstamp>5FD4C5A7</tstamp>
+    </comp>
+    <comp ref="R47">
+      <value>10K</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/mcu/" tstamps="/5FD2DAC8/"/>
+      <tstamp>5FD56ED1</tstamp>
+    </comp>
+    <comp ref="TP3">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <sheetpath names="/mcu/" tstamps="/5FD2DAC8/"/>
+      <tstamp>5FD58C38</tstamp>
+    </comp>
+    <comp ref="C7">
+      <value>100nF 50V</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/mcu/" tstamps="/5FD2DAC8/"/>
+      <tstamp>5FD5DB1E</tstamp>
+    </comp>
+    <comp ref="C8">
+      <value>100nF 50V</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/mcu/" tstamps="/5FD2DAC8/"/>
+      <tstamp>5FD5FD30</tstamp>
+    </comp>
+    <comp ref="C9">
+      <value>10uF 16V</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="farnell">3013487</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/mcu/" tstamps="/5FD2DAC8/"/>
+      <tstamp>5FD609B3</tstamp>
+    </comp>
+    <comp ref="C10">
+      <value>100nF 50V</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/mcu/" tstamps="/5FD2DAC8/"/>
+      <tstamp>5FD6142D</tstamp>
+    </comp>
+    <comp ref="C11">
+      <value>1uF 16V</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="farnell">3013385</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/mcu/" tstamps="/5FD2DAC8/"/>
+      <tstamp>5FD61D12</tstamp>
+    </comp>
+    <comp ref="FB2">
+      <value>Ferrite_Bead</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="Ferrite_Bead" description="Ferrite bead"/>
+      <sheetpath names="/mcu/" tstamps="/5FD2DAC8/"/>
+      <tstamp>5FD73043</tstamp>
+    </comp>
+    <comp ref="R42">
+      <value>0R</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/mcu/" tstamps="/5FD2DAC8/"/>
+      <tstamp>5FFE0E92</tstamp>
+    </comp>
+    <comp ref="R43">
+      <value>0R</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/mcu/" tstamps="/5FD2DAC8/"/>
+      <tstamp>5FFE527B</tstamp>
+    </comp>
+    <comp ref="R31">
+      <value>0R</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/mcu/" tstamps="/5FD2DAC8/"/>
+      <tstamp>5FFEA50E</tstamp>
+    </comp>
+    <comp ref="R33">
+      <value>0R</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/mcu/" tstamps="/5FD2DAC8/"/>
+      <tstamp>5FFEA516</tstamp>
+    </comp>
+    <comp ref="R27">
+      <value>0R</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/mcu/" tstamps="/5FD2DAC8/"/>
+      <tstamp>5FFEBCF8</tstamp>
+    </comp>
+    <comp ref="R29">
+      <value>0R</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/mcu/" tstamps="/5FD2DAC8/"/>
+      <tstamp>5FFEBCFF</tstamp>
+    </comp>
+    <comp ref="R44">
+      <value>0R</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/mcu/" tstamps="/5FD2DAC8/"/>
+      <tstamp>6000ACB9</tstamp>
+    </comp>
+    <comp ref="R45">
+      <value>0R</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/mcu/" tstamps="/5FD2DAC8/"/>
+      <tstamp>6000ACC0</tstamp>
+    </comp>
+    <comp ref="R35">
+      <value>0R</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/mcu/" tstamps="/5FD2DAC8/"/>
+      <tstamp>60014A55</tstamp>
+    </comp>
+    <comp ref="R50">
+      <value>0R</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/mcu/" tstamps="/5FD2DAC8/"/>
+      <tstamp>600238C1</tstamp>
+    </comp>
+    <comp ref="R28">
+      <value>0R</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/mcu/" tstamps="/5FD2DAC8/"/>
+      <tstamp>6002AEE8</tstamp>
+    </comp>
+    <comp ref="R30">
+      <value>0R</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/mcu/" tstamps="/5FD2DAC8/"/>
+      <tstamp>6002C69D</tstamp>
+    </comp>
+    <comp ref="R64">
+      <value>NC</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/mcu/" tstamps="/5FD2DAC8/"/>
+      <tstamp>600379D1</tstamp>
+    </comp>
+    <comp ref="R65">
+      <value>10K</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/mcu/" tstamps="/5FD2DAC8/"/>
+      <tstamp>6003F52D</tstamp>
+    </comp>
+    <comp ref="D2">
+      <value>155124M173200</value>
+      <footprint>plant_monitor:LED_155124M173200</footprint>
+      <datasheet>http://www.farnell.com/datasheets/2301733.pdf</datasheet>
+      <fields>
+        <field name="MANUFACTURER">Wurth Electronics</field>
+        <field name="PARTREV">001.000</field>
+        <field name="SNAPEDA_PACKAGE_ID">40259</field>
+        <field name="farnell">2764995</field>
+      </fields>
+      <libsource lib="plant_monitor" part="155124M173200" description="LED angle droit, Rouge, Vert, Bleu, CMS, 120 °, Dôme, R 20mA, G 20mA, B 20mA"/>
+      <sheetpath names="/mcu/" tstamps="/5FD2DAC8/"/>
+      <tstamp>5FDB8581</tstamp>
+    </comp>
+    <comp ref="R56">
+      <value>0R</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/mcu/" tstamps="/5FD2DAC8/"/>
+      <tstamp>5FDC5A2F</tstamp>
+    </comp>
+    <comp ref="R60">
+      <value>330R</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/mcu/" tstamps="/5FD2DAC8/"/>
+      <tstamp>5FDCCAB3</tstamp>
+    </comp>
+    <comp ref="R62">
+      <value>100R</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/mcu/" tstamps="/5FD2DAC8/"/>
+      <tstamp>5FDD36F8</tstamp>
+    </comp>
+    <comp ref="R63">
+      <value>100R</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/mcu/" tstamps="/5FD2DAC8/"/>
+      <tstamp>5FDD7C2A</tstamp>
+    </comp>
+    <comp ref="S3">
+      <value>EVQP7A01K</value>
+      <footprint>plant_monitor:EVQP7A01K</footprint>
+      <datasheet>http://www.farnell.com/datasheets/1520562.pdf</datasheet>
+      <fields>
+        <field name="farnell">2079538</field>
+      </fields>
+      <libsource lib="plant_monitor" part="EVQP7A01K" description="Commutateur tactile, EVQP7 Series, Commande latérale, Montage en surface, Bouton rectangulaire"/>
+      <sheetpath names="/mcu/" tstamps="/5FD2DAC8/"/>
+      <tstamp>5FE0772A</tstamp>
+    </comp>
+    <comp ref="R53">
+      <value>0R</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/mcu/" tstamps="/5FD2DAC8/"/>
+      <tstamp>5FE09290</tstamp>
+    </comp>
+    <comp ref="R61">
+      <value>100K</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/mcu/" tstamps="/5FD2DAC8/"/>
+      <tstamp>5FE0BBAD</tstamp>
+    </comp>
+    <comp ref="R57">
+      <value>4K7</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/mcu/" tstamps="/5FD2DAC8/"/>
+      <tstamp>5FE2D53B</tstamp>
+    </comp>
+    <comp ref="C17">
+      <value>100nF 50V</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/mcu/" tstamps="/5FD2DAC8/"/>
+      <tstamp>5FE2D542</tstamp>
+    </comp>
+    <comp ref="S2">
+      <value>EVQP7A01K</value>
+      <footprint>plant_monitor:EVQP7A01K</footprint>
+      <datasheet>http://www.farnell.com/datasheets/1520562.pdf</datasheet>
+      <fields>
+        <field name="farnell">2079538</field>
+      </fields>
+      <libsource lib="plant_monitor" part="EVQP7A01K" description="Commutateur tactile, EVQP7 Series, Commande latérale, Montage en surface, Bouton rectangulaire"/>
+      <sheetpath names="/mcu/" tstamps="/5FD2DAC8/"/>
+      <tstamp>5FE4F10C</tstamp>
+    </comp>
+    <comp ref="R52">
+      <value>0R</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/mcu/" tstamps="/5FD2DAC8/"/>
+      <tstamp>5FE4F112</tstamp>
+    </comp>
+    <comp ref="R59">
+      <value>100K</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/mcu/" tstamps="/5FD2DAC8/"/>
+      <tstamp>5FE4F119</tstamp>
+    </comp>
+    <comp ref="R55">
+      <value>4K7</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/mcu/" tstamps="/5FD2DAC8/"/>
+      <tstamp>5FE4F130</tstamp>
+    </comp>
+    <comp ref="C16">
+      <value>100nF 50V</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/mcu/" tstamps="/5FD2DAC8/"/>
+      <tstamp>5FE4F140</tstamp>
+    </comp>
+    <comp ref="S1">
+      <value>EVQP7A01K</value>
+      <footprint>plant_monitor:EVQP7A01K</footprint>
+      <datasheet>http://www.farnell.com/datasheets/1520562.pdf</datasheet>
+      <fields>
+        <field name="farnell">2079538</field>
+      </fields>
+      <libsource lib="plant_monitor" part="EVQP7A01K" description="Commutateur tactile, EVQP7 Series, Commande latérale, Montage en surface, Bouton rectangulaire"/>
+      <sheetpath names="/mcu/" tstamps="/5FD2DAC8/"/>
+      <tstamp>5FE59D27</tstamp>
+    </comp>
+    <comp ref="R51">
+      <value>0R</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/mcu/" tstamps="/5FD2DAC8/"/>
+      <tstamp>5FE59D2D</tstamp>
+    </comp>
+    <comp ref="R58">
+      <value>100K</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/mcu/" tstamps="/5FD2DAC8/"/>
+      <tstamp>5FE59D34</tstamp>
+    </comp>
+    <comp ref="R54">
+      <value>4K7</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/mcu/" tstamps="/5FD2DAC8/"/>
+      <tstamp>5FE59D4B</tstamp>
+    </comp>
+    <comp ref="C15">
+      <value>100nF 50V</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/mcu/" tstamps="/5FD2DAC8/"/>
+      <tstamp>5FE59D5B</tstamp>
+    </comp>
+    <comp ref="R32">
+      <value>0R</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/mcu/" tstamps="/5FD2DAC8/"/>
+      <tstamp>5FF1AC76</tstamp>
+    </comp>
+    <comp ref="R34">
+      <value>0R</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/mcu/" tstamps="/5FD2DAC8/"/>
+      <tstamp>5FF21B59</tstamp>
+    </comp>
+    <comp ref="R36">
+      <value>0R</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/mcu/" tstamps="/5FD2DAC8/"/>
+      <tstamp>5FF28C88</tstamp>
+    </comp>
+    <comp ref="R38">
+      <value>0R</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/mcu/" tstamps="/5FD2DAC8/"/>
+      <tstamp>5FF2FE0E</tstamp>
+    </comp>
+    <comp ref="R39">
+      <value>0R</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/mcu/" tstamps="/5FD2DAC8/"/>
+      <tstamp>5FF38797</tstamp>
+    </comp>
+    <comp ref="R41">
+      <value>0R</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/mcu/" tstamps="/5FD2DAC8/"/>
+      <tstamp>5FF3879D</tstamp>
+    </comp>
+    <comp ref="TP7">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <sheetpath names="/mcu/" tstamps="/5FD2DAC8/"/>
+      <tstamp>5FFF32BF</tstamp>
+    </comp>
+    <comp ref="TP6">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <sheetpath names="/mcu/" tstamps="/5FD2DAC8/"/>
+      <tstamp>6001E873</tstamp>
+    </comp>
+    <comp ref="TP5">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <sheetpath names="/mcu/" tstamps="/5FD2DAC8/"/>
+      <tstamp>60037AFB</tstamp>
+    </comp>
+    <comp ref="TP11">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <sheetpath names="/mcu/" tstamps="/5FD2DAC8/"/>
+      <tstamp>60048F00</tstamp>
+    </comp>
+    <comp ref="TP8">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <sheetpath names="/mcu/" tstamps="/5FD2DAC8/"/>
+      <tstamp>6005B683</tstamp>
+    </comp>
+    <comp ref="TP9">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <sheetpath names="/mcu/" tstamps="/5FD2DAC8/"/>
+      <tstamp>600641B2</tstamp>
+    </comp>
+    <comp ref="TP10">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <sheetpath names="/mcu/" tstamps="/5FD2DAC8/"/>
+      <tstamp>6006CB39</tstamp>
+    </comp>
+    <comp ref="TP4">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <sheetpath names="/mcu/" tstamps="/5FD2DAC8/"/>
+      <tstamp>600901F0</tstamp>
+    </comp>
+    <comp ref="R46">
+      <value>0R</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/mcu/" tstamps="/5FD2DAC8/"/>
+      <tstamp>600AA549</tstamp>
+    </comp>
+    <comp ref="R49">
+      <value>0R</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/mcu/" tstamps="/5FD2DAC8/"/>
+      <tstamp>600B2BBC</tstamp>
+    </comp>
+    <comp ref="J3">
+      <value>Conn_01x06_Male</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical</footprint>
+      <datasheet>http://www.farnell.com/datasheets/2945533.pdf</datasheet>
+      <fields>
+        <field name="farnell">1593415</field>
+      </fields>
+      <libsource lib="Connector" part="Conn_01x06_Male" description="Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/mcu/" tstamps="/5FD2DAC8/"/>
+      <tstamp>600FE3A7</tstamp>
+    </comp>
+    <comp ref="R37">
+      <value>0R</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/mcu/" tstamps="/5FD2DAC8/"/>
+      <tstamp>5FF53EB3</tstamp>
+    </comp>
+    <comp ref="R40">
+      <value>0R</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/mcu/" tstamps="/5FD2DAC8/"/>
+      <tstamp>5FF759F3</tstamp>
+    </comp>
+    <comp ref="R100">
+      <value>0R</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/mcu/" tstamps="/5FD2DAC8/"/>
+      <tstamp>5FF8E0CF</tstamp>
+    </comp>
+    <comp ref="L1">
+      <value>SRN3010TA-1R0Y</value>
+      <footprint>plant_monitor:SRN3010TA</footprint>
+      <datasheet>http://www.farnell.com/datasheets/2372596.pdf</datasheet>
+      <fields>
+        <field name="farnell">2808286</field>
+      </fields>
+      <libsource lib="Device" part="L_Small" description="Inductor, small symbol"/>
+      <sheetpath names="/power/" tstamps="/5FBD9002/"/>
+      <tstamp>5FBDAE0A</tstamp>
+    </comp>
+    <comp ref="C20">
+      <value>10uF 16V</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="farnell">3013487</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/power/" tstamps="/5FBD9002/"/>
+      <tstamp>5FBDC474</tstamp>
+    </comp>
+    <comp ref="C24">
+      <value>1nF 50V</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/power/" tstamps="/5FBD9002/"/>
+      <tstamp>5FBDE152</tstamp>
+    </comp>
+    <comp ref="C21">
+      <value>10uF 16V</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="farnell">3013487</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/power/" tstamps="/5FBD9002/"/>
+      <tstamp>5FBE0EE7</tstamp>
+    </comp>
+    <comp ref="C22">
+      <value>10uF 16V</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="farnell">3013487</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/power/" tstamps="/5FBD9002/"/>
+      <tstamp>5FBE1370</tstamp>
+    </comp>
+    <comp ref="R68">
+      <value>330K</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/power/" tstamps="/5FBD9002/"/>
+      <tstamp>5FBE15D3</tstamp>
+    </comp>
+    <comp ref="R71">
+      <value>120K</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/power/" tstamps="/5FBD9002/"/>
+      <tstamp>5FBE25BA</tstamp>
+    </comp>
+    <comp ref="R72">
+      <value>1M</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/power/" tstamps="/5FBD9002/"/>
+      <tstamp>5FBE3195</tstamp>
+    </comp>
+    <comp ref="C23">
+      <value>10pF 50V</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/power/" tstamps="/5FBD9002/"/>
+      <tstamp>5FBE7477</tstamp>
+    </comp>
+    <comp ref="TP13">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <sheetpath names="/power/" tstamps="/5FBD9002/"/>
+      <tstamp>5FBF21C3</tstamp>
+    </comp>
+    <comp ref="R73">
+      <value>0R</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/power/" tstamps="/5FBD9002/"/>
+      <tstamp>5FBF4318</tstamp>
+    </comp>
+    <comp ref="R70">
+      <value>0R</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/power/" tstamps="/5FBD9002/"/>
+      <tstamp>5FBFCE56</tstamp>
+    </comp>
+    <comp ref="FB3">
+      <value>Ferrite_Bead</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="Ferrite_Bead" description="Ferrite bead"/>
+      <sheetpath names="/power/" tstamps="/5FBD9002/"/>
+      <tstamp>5FC025C6</tstamp>
+    </comp>
+    <comp ref="TP12">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <sheetpath names="/power/" tstamps="/5FBD9002/"/>
+      <tstamp>5FC079DD</tstamp>
+    </comp>
+    <comp ref="TP14">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <sheetpath names="/power/" tstamps="/5FBD9002/"/>
+      <tstamp>5FC08E87</tstamp>
+    </comp>
+    <comp ref="U8">
+      <value>SPV1040T</value>
+      <footprint>plant_monitor:SOP65P640X120-8N</footprint>
+      <datasheet>https://www.st.com/resource/en/datasheet/spv1040.pdf</datasheet>
+      <fields>
+        <field name="MANUFACTURER">ST Microelectronics</field>
+        <field name="PARTREV">7</field>
+        <field name="STANDARD">IPC7351B</field>
+        <field name="farnell">2762710</field>
+      </fields>
+      <libsource lib="plant_monitor" part="SPV1040T" description="Chargeur de batterie, batterie solaire, Entrée 0,3V à 5,5V, charge 5,2V/1,8A, PWM 100 kHz, TSSOP-8"/>
+      <sheetpath names="/power/" tstamps="/5FBD9002/"/>
+      <tstamp>5FC91132</tstamp>
+    </comp>
+    <comp ref="SC1">
+      <value>Solar_Cell</value>
+      <footprint>plant_monitor:SOLAR_CELL</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="Solar_Cell" description="Single solar cell"/>
+      <sheetpath names="/power/" tstamps="/5FBD9002/"/>
+      <tstamp>5FC95B25</tstamp>
+    </comp>
+    <comp ref="C25">
+      <value>10uF 16V</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="farnell">3013487</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/power/" tstamps="/5FBD9002/"/>
+      <tstamp>5FC9E43C</tstamp>
+    </comp>
+    <comp ref="R75">
+      <value>1R</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/power/" tstamps="/5FBD9002/"/>
+      <tstamp>5FCA1B2C</tstamp>
+    </comp>
+    <comp ref="R78">
+      <value>1K</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/power/" tstamps="/5FBD9002/"/>
+      <tstamp>5FCA2BD6</tstamp>
+    </comp>
+    <comp ref="R83">
+      <value>1K</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/power/" tstamps="/5FBD9002/"/>
+      <tstamp>5FCA4176</tstamp>
+    </comp>
+    <comp ref="C26">
+      <value>1uF 16V</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="farnell">3013385</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/power/" tstamps="/5FBD9002/"/>
+      <tstamp>5FCA5573</tstamp>
+    </comp>
+    <comp ref="R80">
+      <value>1.2M</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/power/" tstamps="/5FBD9002/"/>
+      <tstamp>5FCA9248</tstamp>
+    </comp>
+    <comp ref="R85">
+      <value>510K</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/power/" tstamps="/5FBD9002/"/>
+      <tstamp>5FCAA4A2</tstamp>
+    </comp>
+    <comp ref="C28">
+      <value>10uF 16V</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="farnell">3013487</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/power/" tstamps="/5FBD9002/"/>
+      <tstamp>5FCCD494</tstamp>
+    </comp>
+    <comp ref="R81">
+      <value>1K</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/power/" tstamps="/5FBD9002/"/>
+      <tstamp>5FCF8D01</tstamp>
+    </comp>
+    <comp ref="C29">
+      <value>100nF 50V</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/power/" tstamps="/5FBD9002/"/>
+      <tstamp>5FCFF304</tstamp>
+    </comp>
+    <comp ref="L2">
+      <value>1264EY-220M=P3</value>
+      <footprint>plant_monitor:IND_1264EY-220M=P3</footprint>
+      <datasheet>http://www.farnell.com/datasheets/2616905.pdf</datasheet>
+      <fields>
+        <field name="MANUFACTURER">Murata</field>
+        <field name="MAXIMUM_PACKAGE_HEIGHT">5mm</field>
+        <field name="PARTREV">N/A</field>
+        <field name="STANDARD">Manufacturer Recommendations</field>
+        <field name="farnell">2871571</field>
+      </fields>
+      <libsource lib="plant_monitor" part="1264EY-220M=P3" description="Inductances de Puissance (CMS), 22 µH, 1.8 A, Bobiné, 2.3 A, DG6050C Series, 6mm x 6mm x 5mm"/>
+      <sheetpath names="/power/" tstamps="/5FBD9002/"/>
+      <tstamp>5FD16926</tstamp>
+    </comp>
+    <comp ref="C30">
+      <value>22nF 50V</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/power/" tstamps="/5FBD9002/"/>
+      <tstamp>5FD40621</tstamp>
+    </comp>
+    <comp ref="D3">
+      <value>SMM4F5.0A-TR</value>
+      <footprint>plant_monitor:SMM4F5.0A-TR</footprint>
+      <datasheet>https://www.mouser.fr/datasheet/2/389/smm4f10a-1849921.pdf</datasheet>
+      <fields>
+        <field name="farnell">1689313</field>
+      </fields>
+      <libsource lib="plant_monitor-rescue" part="SMM4F5.0A-TR-plant_monitor" description=""/>
+      <sheetpath names="/power/" tstamps="/5FBD9002/"/>
+      <tstamp>5FC9988E</tstamp>
+    </comp>
+    <comp ref="R77">
+      <value>1K</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/power/" tstamps="/5FBD9002/"/>
+      <tstamp>5FCA217E</tstamp>
+    </comp>
+    <comp ref="C27">
+      <value>10uF 16V</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="farnell">3013487</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/power/" tstamps="/5FBD9002/"/>
+      <tstamp>5FCF0864</tstamp>
+    </comp>
+    <comp ref="U6">
+      <value>BQ21040</value>
+      <footprint>digikey-footprints:SOT-23-6</footprint>
+      <libsource lib="simon" part="BQ21040" description=""/>
+      <sheetpath names="/power/" tstamps="/5FBD9002/"/>
+      <tstamp>5FD412D8</tstamp>
+    </comp>
+    <comp ref="C19">
+      <value>1uF 16V</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="farnell">3013385</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/power/" tstamps="/5FBD9002/"/>
+      <tstamp>5FD6FAF9</tstamp>
+    </comp>
+    <comp ref="R66">
+      <value>10K</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/power/" tstamps="/5FBD9002/"/>
+      <tstamp>5FD7A6DB</tstamp>
+    </comp>
+    <comp ref="R67">
+      <value>10K</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/power/" tstamps="/5FBD9002/"/>
+      <tstamp>5FD83EC5</tstamp>
+    </comp>
+    <comp ref="C18">
+      <value>1uF 16V</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="farnell">3013385</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/power/" tstamps="/5FBD9002/"/>
+      <tstamp>5FD917DB</tstamp>
+    </comp>
+    <comp ref="R69">
+      <value>1M</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/power/" tstamps="/5FBD9002/"/>
+      <tstamp>5FD9E4F3</tstamp>
+    </comp>
+    <comp ref="BT1">
+      <value>Battery_Cell</value>
+      <footprint>Connector_JST:JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="Battery_Cell" description="Single-cell battery"/>
+      <sheetpath names="/power/" tstamps="/5FBD9002/"/>
+      <tstamp>5FDE38F9</tstamp>
+    </comp>
+    <comp ref="Q2">
+      <value>BSS84</value>
+      <footprint>digikey-footprints:SOT-23-3</footprint>
+      <datasheet>https://www.onsemi.com/pub/Collateral/BSS84-D.PDF</datasheet>
+      <fields>
+        <field name="Category">Discrete Semiconductor Products</field>
+        <field name="DK_Datasheet_Link">https://www.onsemi.com/pub/Collateral/BSS84-D.PDF</field>
+        <field name="DK_Detail_Page">/product-detail/en/on-semiconductor/BSS84/BSS84CT-ND/244297</field>
+        <field name="Description">MOSFET P-CH 50V 130MA SOT-23</field>
+        <field name="Digi-Key_PN">BSS84CT-ND</field>
+        <field name="Family">Transistors - FETs, MOSFETs - Single</field>
+        <field name="MPN">BSS84</field>
+        <field name="Manufacturer">ON Semiconductor</field>
+        <field name="Status">Active</field>
+      </fields>
+      <libsource lib="dk_Transistors-FETs-MOSFETs-Single" part="BSS84" description="MOSFET P-CH 50V 130MA SOT-23"/>
+      <sheetpath names="/power/" tstamps="/5FBD9002/"/>
+      <tstamp>5FE5B14D</tstamp>
+    </comp>
+    <comp ref="Q3">
+      <value>BSS138</value>
+      <footprint>digikey-footprints:SOT-23-3</footprint>
+      <datasheet>https://www.onsemi.com/pub/Collateral/BSS138-D.PDF</datasheet>
+      <fields>
+        <field name="Category">Discrete Semiconductor Products</field>
+        <field name="DK_Datasheet_Link">https://www.onsemi.com/pub/Collateral/BSS138-D.PDF</field>
+        <field name="DK_Detail_Page">/product-detail/en/on-semiconductor/BSS138/BSS138CT-ND/244294</field>
+        <field name="Description">MOSFET N-CH 50V 220MA SOT-23</field>
+        <field name="Digi-Key_PN">BSS138CT-ND</field>
+        <field name="Family">Transistors - FETs, MOSFETs - Single</field>
+        <field name="MPN">BSS138</field>
+        <field name="Manufacturer">ON Semiconductor</field>
+        <field name="Status">Active</field>
+      </fields>
+      <libsource lib="dk_Transistors-FETs-MOSFETs-Single" part="BSS138" description="MOSFET N-CH 50V 220MA SOT-23"/>
+      <sheetpath names="/power/" tstamps="/5FBD9002/"/>
+      <tstamp>5FE5D159</tstamp>
+    </comp>
+    <comp ref="R82">
+      <value>120K</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/power/" tstamps="/5FBD9002/"/>
+      <tstamp>5FE5ECB3</tstamp>
+    </comp>
+    <comp ref="R86">
+      <value>150K</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/power/" tstamps="/5FBD9002/"/>
+      <tstamp>5FE62BD1</tstamp>
+    </comp>
+    <comp ref="R84">
+      <value>4K7</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/power/" tstamps="/5FBD9002/"/>
+      <tstamp>5FE72717</tstamp>
+    </comp>
+    <comp ref="C31">
+      <value>100nF 50V</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/power/" tstamps="/5FBD9002/"/>
+      <tstamp>5FE7704A</tstamp>
+    </comp>
+    <comp ref="R79">
+      <value>100K</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/power/" tstamps="/5FBD9002/"/>
+      <tstamp>5FE8BAFB</tstamp>
+    </comp>
+    <comp ref="R74">
+      <value>1M</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/power/" tstamps="/5FBD9002/"/>
+      <tstamp>5FEB1942</tstamp>
+    </comp>
+    <comp ref="R76">
+      <value>1K</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/power/" tstamps="/5FBD9002/"/>
+      <tstamp>5FEFF700</tstamp>
+    </comp>
+    <comp ref="TP15">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <sheetpath names="/power/" tstamps="/5FBD9002/"/>
+      <tstamp>5FFB051D</tstamp>
+    </comp>
+    <comp ref="TP19">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <sheetpath names="/power/" tstamps="/5FBD9002/"/>
+      <tstamp>5FFC9CCB</tstamp>
+    </comp>
+    <comp ref="TP17">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <sheetpath names="/power/" tstamps="/5FBD9002/"/>
+      <tstamp>5FFD0416</tstamp>
+    </comp>
+    <comp ref="TP16">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <sheetpath names="/power/" tstamps="/5FBD9002/"/>
+      <tstamp>5FFD5772</tstamp>
+    </comp>
+    <comp ref="TP20">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <sheetpath names="/power/" tstamps="/5FBD9002/"/>
+      <tstamp>5FFDB48F</tstamp>
+    </comp>
+    <comp ref="TP18">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <sheetpath names="/power/" tstamps="/5FBD9002/"/>
+      <tstamp>5FFE10D1</tstamp>
+    </comp>
+    <comp ref="U7">
+      <value>TPS63050RMWR</value>
+      <footprint>plant_monitor:QFN50P250X250X100-12N</footprint>
+      <datasheet>https://www.ti.com/lit/ds/symlink/tps63050.pdf?ts=1606205820084&amp;ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FTPS63050</datasheet>
+      <fields>
+        <field name="DESCRIPTION">Tiny Single Inductor Buck Boost Converter 12-VQFN-HR -40 to 85</field>
+        <field name="DIGIKEY-PURCHASE-URL">https://snapeda.com/shop?store=DigiKey&amp;id=423860</field>
+        <field name="MF">Texas Instruments</field>
+        <field name="MOUSER-PURCHASE-URL">https://snapeda.com/shop?store=Mouser&amp;id=423860</field>
+        <field name="MP">TPS63051RMWR</field>
+        <field name="PACKAGE">VQFN-HR-12 Texas Instruments</field>
+        <field name="PRICE">None</field>
+        <field name="TEXAS_INSTRUMENTS-PURCHASE-URL">https://snapeda.com/shop?store=Texas+Instruments&amp;id=423860</field>
+        <field name="farnell">3007462</field>
+      </fields>
+      <libsource lib="plant_monitor" part="TPS63050RMWR" description="Régulateur à découpage DC/DC Buck Boost, Ajustable, 2.5 V-5.5Vin, 2.5.5Vout, 500mAout, VQFN-12"/>
+      <sheetpath names="/power/" tstamps="/5FBD9002/"/>
+      <tstamp>5FBD92B8</tstamp>
+    </comp>
+    <comp ref="U9">
+      <value>WSSFM10R1AT</value>
+      <footprint>plant_monitor:XCVR_WSSFM10R1AT_HANDSOLDER</footprint>
+      <datasheet>https://yadom.fr/media/product-attachment//home/magento///File-1572880994.pdf</datasheet>
+      <libsource lib="sweet" part="WSSFM10R1AT" description=""/>
+      <sheetpath names="/modem/" tstamps="/5FCA0FE0/"/>
+      <tstamp>5FCA1285</tstamp>
+    </comp>
+    <comp ref="R92">
+      <value>0R</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/modem/" tstamps="/5FCA0FE0/"/>
+      <tstamp>5FCA8685</tstamp>
+    </comp>
+    <comp ref="R93">
+      <value>0R</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/modem/" tstamps="/5FCA0FE0/"/>
+      <tstamp>5FCA95EB</tstamp>
+    </comp>
+    <comp ref="D4">
+      <value>KP-2012SGC</value>
+      <footprint>plant_monitor:KP-2012SGC</footprint>
+      <datasheet>http://www.farnell.com/datasheets/2045909.pdf</datasheet>
+      <fields>
+        <field name="farnell">1318243</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/modem/" tstamps="/5FCA0FE0/"/>
+      <tstamp>5FCAA826</tstamp>
+    </comp>
+    <comp ref="R94">
+      <value>330R</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/modem/" tstamps="/5FCA0FE0/"/>
+      <tstamp>5FCAD1AF</tstamp>
+    </comp>
+    <comp ref="R95">
+      <value>330R</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/modem/" tstamps="/5FCA0FE0/"/>
+      <tstamp>5FCAD697</tstamp>
+    </comp>
+    <comp ref="D5">
+      <value>KP-2012SGC</value>
+      <footprint>plant_monitor:KP-2012SGC</footprint>
+      <datasheet>http://www.farnell.com/datasheets/2045909.pdf</datasheet>
+      <fields>
+        <field name="farnell">1318243</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/modem/" tstamps="/5FCA0FE0/"/>
+      <tstamp>5FCAFA5E</tstamp>
+    </comp>
+    <comp ref="TP31">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <sheetpath names="/modem/" tstamps="/5FCA0FE0/"/>
+      <tstamp>5FCD491E</tstamp>
+    </comp>
+    <comp ref="TP33">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <sheetpath names="/modem/" tstamps="/5FCA0FE0/"/>
+      <tstamp>5FCD6008</tstamp>
+    </comp>
+    <comp ref="D6">
+      <value>KP-2012SGC</value>
+      <footprint>plant_monitor:KP-2012SGC</footprint>
+      <datasheet>http://www.farnell.com/datasheets/2045909.pdf</datasheet>
+      <fields>
+        <field name="farnell">1318243</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/modem/" tstamps="/5FCA0FE0/"/>
+      <tstamp>5FCDF9F6</tstamp>
+    </comp>
+    <comp ref="D7">
+      <value>KP-2012SGC</value>
+      <footprint>plant_monitor:KP-2012SGC</footprint>
+      <datasheet>http://www.farnell.com/datasheets/2045909.pdf</datasheet>
+      <fields>
+        <field name="farnell">1318243</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/modem/" tstamps="/5FCA0FE0/"/>
+      <tstamp>5FCDF9FD</tstamp>
+    </comp>
+    <comp ref="R97">
+      <value>330R</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/modem/" tstamps="/5FCA0FE0/"/>
+      <tstamp>5FCE18DB</tstamp>
+    </comp>
+    <comp ref="R98">
+      <value>330R</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/modem/" tstamps="/5FCA0FE0/"/>
+      <tstamp>5FCE18E1</tstamp>
+    </comp>
+    <comp ref="TP22">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <sheetpath names="/modem/" tstamps="/5FCA0FE0/"/>
+      <tstamp>5FCE9DBE</tstamp>
+    </comp>
+    <comp ref="TP21">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <sheetpath names="/modem/" tstamps="/5FCA0FE0/"/>
+      <tstamp>5FCE9DC4</tstamp>
+    </comp>
+    <comp ref="TP24">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <sheetpath names="/modem/" tstamps="/5FCA0FE0/"/>
+      <tstamp>5FCEADDB</tstamp>
+    </comp>
+    <comp ref="TP23">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <sheetpath names="/modem/" tstamps="/5FCA0FE0/"/>
+      <tstamp>5FCEADE1</tstamp>
+    </comp>
+    <comp ref="TP26">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <sheetpath names="/modem/" tstamps="/5FCA0FE0/"/>
+      <tstamp>5FCED207</tstamp>
+    </comp>
+    <comp ref="TP25">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <sheetpath names="/modem/" tstamps="/5FCA0FE0/"/>
+      <tstamp>5FCED20D</tstamp>
+    </comp>
+    <comp ref="TP28">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <sheetpath names="/modem/" tstamps="/5FCA0FE0/"/>
+      <tstamp>5FCEE536</tstamp>
+    </comp>
+    <comp ref="TP27">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <sheetpath names="/modem/" tstamps="/5FCA0FE0/"/>
+      <tstamp>5FCEE53C</tstamp>
+    </comp>
+    <comp ref="TP29">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <sheetpath names="/modem/" tstamps="/5FCA0FE0/"/>
+      <tstamp>5FCEF642</tstamp>
+    </comp>
+    <comp ref="C33">
+      <value>100nF 50V</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/modem/" tstamps="/5FCA0FE0/"/>
+      <tstamp>5FCFE262</tstamp>
+    </comp>
+    <comp ref="C32">
+      <value>22uF 10V</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="farnell">2494270</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/modem/" tstamps="/5FCA0FE0/"/>
+      <tstamp>5FCFFB57</tstamp>
+    </comp>
+    <comp ref="FB4">
+      <value>Ferrite_Bead</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="Ferrite_Bead" description="Ferrite bead"/>
+      <sheetpath names="/modem/" tstamps="/5FCA0FE0/"/>
+      <tstamp>5FD110CA</tstamp>
+    </comp>
+    <comp ref="R91">
+      <value>100K</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/modem/" tstamps="/5FCA0FE0/"/>
+      <tstamp>5FD17DB0</tstamp>
+    </comp>
+    <comp ref="C35">
+      <value>100nF 50V</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/modem/" tstamps="/5FCA0FE0/"/>
+      <tstamp>5FD1C707</tstamp>
+    </comp>
+    <comp ref="C34">
+      <value>100pF</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/modem/" tstamps="/5FCA0FE0/"/>
+      <tstamp>5FD29985</tstamp>
+    </comp>
+    <comp ref="R87">
+      <value>0R</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/modem/" tstamps="/5FCA0FE0/"/>
+      <tstamp>5FD2C1D3</tstamp>
+    </comp>
+    <comp ref="L3">
+      <value>47nH</value>
+      <footprint>Inductor_SMD:L_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="L_Small" description="Inductor, small symbol"/>
+      <sheetpath names="/modem/" tstamps="/5FCA0FE0/"/>
+      <tstamp>5FD2E358</tstamp>
+    </comp>
+    <comp ref="ANT1">
+      <value>ANT_M620720</value>
+      <footprint>sweet:M620720</footprint>
+      <datasheet>http://datasheets.avx.com/ethertronics/AVX-E_M620720.pdf</datasheet>
+      <fields>
+        <field name="digikey">939-1066-1-ND</field>
+      </fields>
+      <libsource lib="sweet" part="ANT_M620720" description="RF ANT 868MHZ/915MHZ CHIP SLD"/>
+      <sheetpath names="/modem/" tstamps="/5FCA0FE0/"/>
+      <tstamp>5FD38E7B</tstamp>
+    </comp>
+    <comp ref="R89">
+      <value>0R</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/modem/" tstamps="/5FCA0FE0/"/>
+      <tstamp>5FD3C9BB</tstamp>
+    </comp>
+    <comp ref="R96">
+      <value>0R</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/modem/" tstamps="/5FCA0FE0/"/>
+      <tstamp>5FD51B89</tstamp>
+    </comp>
+    <comp ref="R99">
+      <value>100K</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/modem/" tstamps="/5FCA0FE0/"/>
+      <tstamp>5FD64B14</tstamp>
+    </comp>
+    <comp ref="TP32">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <sheetpath names="/modem/" tstamps="/5FCA0FE0/"/>
+      <tstamp>5FC80C7E</tstamp>
+    </comp>
+    <comp ref="TP30">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <sheetpath names="/modem/" tstamps="/5FCA0FE0/"/>
+      <tstamp>5FC84284</tstamp>
+    </comp>
+    <comp ref="R90">
+      <value>0R</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/modem/" tstamps="/5FCA0FE0/"/>
+      <tstamp>5FD061D0</tstamp>
+    </comp>
+    <comp ref="H1">
+      <value>M2.5</value>
+      <footprint>MountingHole:MountingHole_2.7mm_M2.5</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <sheetpath names="/modem/" tstamps="/5FCA0FE0/"/>
+      <tstamp>6002A6D7</tstamp>
+    </comp>
+    <comp ref="H2">
+      <value>M2.5</value>
+      <footprint>MountingHole:MountingHole_2.7mm_M2.5</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <sheetpath names="/modem/" tstamps="/5FCA0FE0/"/>
+      <tstamp>6002B30C</tstamp>
+    </comp>
+    <comp ref="H3">
+      <value>M2.5</value>
+      <footprint>MountingHole:MountingHole_2.7mm_M2.5</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <sheetpath names="/modem/" tstamps="/5FCA0FE0/"/>
+      <tstamp>6002E418</tstamp>
+    </comp>
+    <comp ref="H4">
+      <value>M2.5</value>
+      <footprint>MountingHole:MountingHole_2.7mm_M2.5</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <sheetpath names="/modem/" tstamps="/5FCA0FE0/"/>
+      <tstamp>6003142B</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Connector" part="Conn_01x03_Female">
+      <description>Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x03_Female</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="Conn_01x03_Male">
+      <description>Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x03_Male</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="Conn_01x06_Male">
+      <description>Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x06_Male</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="TestPoint">
+      <description>test point</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Pin*</fp>
+        <fp>Test*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">TP</field>
+        <field name="Value">TestPoint</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Battery_Cell">
+      <description>Single-cell battery</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">BT</field>
+        <field name="Value">Battery_Cell</field>
+      </fields>
+      <pins>
+        <pin num="1" name="+" type="passive"/>
+        <pin num="2" name="-" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C_Small">
+      <description>Unpolarized capacitor, small symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_Small</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Ferrite_Bead">
+      <description>Ferrite bead</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Inductor_*</fp>
+        <fp>L_*</fp>
+        <fp>*Ferrite*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">FB</field>
+        <field name="Value">Ferrite_Bead</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="LED">
+      <description>Light emitting diode</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>LED*</fp>
+        <fp>LED_SMD:*</fp>
+        <fp>LED_THT:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="L_Small">
+      <description>Inductor, small symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Choke_*</fp>
+        <fp>*Coil*</fp>
+        <fp>Inductor_*</fp>
+        <fp>L_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">L</field>
+        <field name="Value">L_Small</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R_Small">
+      <description>Resistor, small symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R_Small</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Solar_Cell">
+      <description>Single solar cell</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">SC</field>
+        <field name="Value">Solar_Cell</field>
+      </fields>
+      <pins>
+        <pin num="1" name="+" type="passive"/>
+        <pin num="2" name="-" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Diode" part="BAT54W">
+      <description>Schottky barrier diode, SOT-323</description>
+      <docs>https://assets.nexperia.com/documents/data-sheet/BAT54W_SER.pdf</docs>
+      <footprints>
+        <fp>SOT?323*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">BAT54W</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-323_SC-70</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A" type="passive"/>
+        <pin num="2" name="NC" type="NotConnected"/>
+        <pin num="3" name="K" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Mechanical" part="MountingHole">
+      <description>Mounting Hole without connection</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>MountingHole*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">H</field>
+        <field name="Value">MountingHole</field>
+      </fields>
+    </libpart>
+    <libpart lib="dk_Transistors-FETs-MOSFETs-Single" part="BSS138">
+      <description>MOSFET N-CH 50V 220MA SOT-23</description>
+      <docs>https://www.onsemi.com/pub/Collateral/BSS138-D.PDF</docs>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">BSS138</field>
+        <field name="Footprint">digikey-footprints:SOT-23-3</field>
+        <field name="Datasheet">https://www.onsemi.com/pub/Collateral/BSS138-D.PDF</field>
+        <field name="Digi-Key_PN">BSS138CT-ND</field>
+        <field name="MPN">BSS138</field>
+        <field name="Category">Discrete Semiconductor Products</field>
+        <field name="Family">Transistors - FETs, MOSFETs - Single</field>
+        <field name="DK_Datasheet_Link">https://www.onsemi.com/pub/Collateral/BSS138-D.PDF</field>
+        <field name="DK_Detail_Page">/product-detail/en/on-semiconductor/BSS138/BSS138CT-ND/244294</field>
+        <field name="Description">MOSFET N-CH 50V 220MA SOT-23</field>
+        <field name="Manufacturer">ON Semiconductor</field>
+        <field name="Status">Active</field>
+      </fields>
+      <pins>
+        <pin num="1" name="G" type="BiDi"/>
+        <pin num="2" name="S" type="BiDi"/>
+        <pin num="3" name="D" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="dk_Transistors-FETs-MOSFETs-Single" part="BSS84">
+      <description>MOSFET P-CH 50V 130MA SOT-23</description>
+      <docs>https://www.onsemi.com/pub/Collateral/BSS84-D.PDF</docs>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">BSS84</field>
+        <field name="Footprint">digikey-footprints:SOT-23-3</field>
+        <field name="Datasheet">https://www.onsemi.com/pub/Collateral/BSS84-D.PDF</field>
+        <field name="Digi-Key_PN">BSS84CT-ND</field>
+        <field name="MPN">BSS84</field>
+        <field name="Category">Discrete Semiconductor Products</field>
+        <field name="Family">Transistors - FETs, MOSFETs - Single</field>
+        <field name="DK_Datasheet_Link">https://www.onsemi.com/pub/Collateral/BSS84-D.PDF</field>
+        <field name="DK_Detail_Page">/product-detail/en/on-semiconductor/BSS84/BSS84CT-ND/244297</field>
+        <field name="Description">MOSFET P-CH 50V 130MA SOT-23</field>
+        <field name="Manufacturer">ON Semiconductor</field>
+        <field name="Status">Active</field>
+      </fields>
+      <pins>
+        <pin num="1" name="G" type="BiDi"/>
+        <pin num="2" name="D" type="BiDi"/>
+        <pin num="3" name="S" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="plant_monitor" part="1264EY-220M=P3">
+      <description>Inductances de Puissance (CMS), 22 µH, 1.8 A, Bobiné, 2.3 A, DG6050C Series, 6mm x 6mm x 5mm</description>
+      <docs>http://www.farnell.com/datasheets/2616905.pdf</docs>
+      <fields>
+        <field name="Reference">L</field>
+        <field name="Value">1264EY-220M=P3</field>
+        <field name="Footprint">IND_1264EY-220M=P3</field>
+        <field name="MAXIMUM_PACKAGE_HEIGHT">5mm</field>
+        <field name="STANDARD">Manufacturer Recommendations</field>
+        <field name="PARTREV">N/A</field>
+        <field name="MANUFACTURER">Murata</field>
+        <field name="farnell">2871571</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="plant_monitor" part="155124M173200">
+      <description>LED angle droit, Rouge, Vert, Bleu, CMS, 120 °, Dôme, R 20mA, G 20mA, B 20mA</description>
+      <docs>http://www.farnell.com/datasheets/2301733.pdf</docs>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">155124M173200</field>
+        <field name="Footprint">LED_155124M173200</field>
+        <field name="PARTREV">001.000</field>
+        <field name="SNAPEDA_PACKAGE_ID">40259</field>
+        <field name="MANUFACTURER">Wurth Electronics</field>
+        <field name="farnell">2764995</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+        <pin num="3" name="~" type="passive"/>
+        <pin num="4" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="plant_monitor" part="EVQP7A01K">
+      <description>Commutateur tactile, EVQP7 Series, Commande latérale, Montage en surface, Bouton rectangulaire</description>
+      <docs>http://www.farnell.com/datasheets/1520562.pdf</docs>
+      <fields>
+        <field name="Reference">S</field>
+        <field name="Value">EVQP7A01K</field>
+        <field name="farnell">2079538</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+        <pin num="4" name="4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="plant_monitor" part="MCP9808T-E_MS">
+      <description>CI de capteur de température, Drain ouvert, ± 1°C, -40 °C, 125 °C, MSOP, 8 Broche(s)</description>
+      <docs>http://ww1.microchip.com/downloads/en/DeviceDoc/25095A.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">MCP9808T-E_MS</field>
+        <field name="Footprint">SOP65P490X110-8N</field>
+        <field name="MANUFACTURER">Microchip</field>
+        <field name="farnell">2851677</field>
+      </fields>
+      <pins>
+        <pin num="1" name="SDA" type="BiDi"/>
+        <pin num="2" name="SCL" type="input"/>
+        <pin num="3" name="ALERT" type="output"/>
+        <pin num="4" name="GND" type="power_in"/>
+        <pin num="5" name="A2" type="input"/>
+        <pin num="6" name="A1" type="input"/>
+        <pin num="7" name="A0" type="input"/>
+        <pin num="8" name="VDD" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="plant_monitor" part="MS563702BA03-50">
+      <description>Capteur de pression, Barométrique, 300 mbar, 1200 mbar, 1.8 V, 3.6 V</description>
+      <docs>http://www.farnell.com/datasheets/2917209.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">MS563702BA03-50</field>
+        <field name="Footprint">TE_MS563702BA03-50</field>
+        <field name="Comment">MS563702BA03-50</field>
+        <field name="EU_RoHS_Compliance">Compliant</field>
+        <field name="farnell">2362663</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VDD" type="power_in"/>
+        <pin num="2" name="SDA" type="BiDi"/>
+        <pin num="3" name="SCL" type="input"/>
+        <pin num="4" name="GND" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="plant_monitor" part="QTP732.76812B20R">
+      <description>Cristal, 32.768 kHz, CMS, 6.9mm x 1.4mm, 12.5 pF, 20 ppm, QTP7 Series</description>
+      <docs>http://www.farnell.com/datasheets/1998801.pdf</docs>
+      <fields>
+        <field name="Reference">X</field>
+        <field name="Value">QTP732.76812B20R</field>
+        <field name="farnell">2508436</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="NotConnected"/>
+        <pin num="3" name="3" type="NotConnected"/>
+        <pin num="4" name="4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="plant_monitor" part="SHTC3">
+      <description>CAPTEUR HUMIDITE/TEMP, DFN-4</description>
+      <docs>http://www.farnell.com/datasheets/2829053.pdf</docs>
+      <footprints>
+        <fp>SHTC3_SEN</fp>
+        <fp>SHTC3_SEN-M</fp>
+        <fp>SHTC3_SEN-L</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">SHTC3</field>
+        <field name="Footprint">SHTC3_SEN</field>
+        <field name="farnell">3106918</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VDD" type="power_in"/>
+        <pin num="2" name="SCL" type="BiDi"/>
+        <pin num="3" name="SDA" type="BiDi"/>
+        <pin num="4" name="VSS" type="power_in"/>
+        <pin num="5" name="VSS" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="plant_monitor" part="SI1133-AA00-GMR">
+      <description>Capteur lumière ambiante, Sortie I2C, Sensibilité crête 625nm, Alim. 1,62V à 3,6V DFN-10</description>
+      <docs>http://www.farnell.com/datasheets/2311618.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">SI1133-AA00-GMR</field>
+        <field name="Footprint">plant_monitor:SI1133-AA00-GMR</field>
+        <field name="farnell">3105966</field>
+      </fields>
+      <pins>
+        <pin num="1" name="SDA" type="BiDi"/>
+        <pin num="2" name="SCL" type="input"/>
+        <pin num="3" name="VDD" type="power_in"/>
+        <pin num="4" name="INT" type="output"/>
+        <pin num="5" name="DNC" type="NotConnected"/>
+        <pin num="6" name="AD" type="input"/>
+        <pin num="7" name="R_PULLUP" type="input"/>
+        <pin num="8" name="GND" type="power_in"/>
+        <pin num="9" name="R_PULLUP" type="input"/>
+        <pin num="10" name="DNC" type="NotConnected"/>
+      </pins>
+    </libpart>
+    <libpart lib="plant_monitor" part="SPV1040T">
+      <description>Chargeur de batterie, batterie solaire, Entrée 0,3V à 5,5V, charge 5,2V/1,8A, PWM 100 kHz, TSSOP-8</description>
+      <docs>https://www.st.com/resource/en/datasheet/spv1040.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">SPV1040T</field>
+        <field name="Footprint">SOP65P640X120-8N</field>
+        <field name="MANUFACTURER">ST Microelectronics</field>
+        <field name="STANDARD">IPC7351B</field>
+        <field name="PARTREV">7</field>
+        <field name="farnell">2762710</field>
+      </fields>
+      <pins>
+        <pin num="1" name="MPPT-SET" type="input"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="LX" type="input"/>
+        <pin num="4" name="VOUT" type="output"/>
+        <pin num="5" name="VCTRL" type="input"/>
+        <pin num="6" name="ICTRL_MINUS" type="input"/>
+        <pin num="7" name="ICTRL_PLUS" type="input"/>
+        <pin num="8" name="XSHUT" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="plant_monitor" part="STM32L071KBT6">
+      <description>MCU ARM, STM32 Family STM32L0 Series Microcontrollers, ARM Cortex-M0+, 32 bits, 32 MHz, 128 KB</description>
+      <docs>https://www.st.com/resource/en/datasheet/stm32l071kb.pdf</docs>
+      <footprints>
+        <fp>LQFP32_7X7X1P4</fp>
+        <fp>LQFP32_7X7X1P4-M</fp>
+        <fp>LQFP32_7X7X1P4-L</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">STM32L071KBT6</field>
+        <field name="Footprint">LQFP32_7X7X1P4</field>
+        <field name="farnell">3365397</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VDD" type="power_in"/>
+        <pin num="2" name="PC14-OSC32_IN" type="BiDi"/>
+        <pin num="3" name="PC15-OSC32_OUT" type="BiDi"/>
+        <pin num="4" name="NRST" type="BiDi"/>
+        <pin num="5" name="VDDA" type="power_in"/>
+        <pin num="6" name="PA0" type="BiDi"/>
+        <pin num="7" name="PA1" type="BiDi"/>
+        <pin num="8" name="PA2" type="BiDi"/>
+        <pin num="9" name="PA3" type="BiDi"/>
+        <pin num="10" name="PA4" type="BiDi"/>
+        <pin num="11" name="PA5" type="BiDi"/>
+        <pin num="12" name="PA6" type="BiDi"/>
+        <pin num="13" name="PA7" type="BiDi"/>
+        <pin num="14" name="PB0" type="BiDi"/>
+        <pin num="15" name="PB1" type="BiDi"/>
+        <pin num="16" name="VSS" type="power_in"/>
+        <pin num="17" name="VDD" type="power_in"/>
+        <pin num="18" name="PA8" type="BiDi"/>
+        <pin num="19" name="PA9" type="BiDi"/>
+        <pin num="20" name="PA10" type="BiDi"/>
+        <pin num="21" name="PA11" type="BiDi"/>
+        <pin num="22" name="PA12" type="BiDi"/>
+        <pin num="23" name="PA13" type="BiDi"/>
+        <pin num="24" name="PA14" type="BiDi"/>
+        <pin num="25" name="PA15" type="BiDi"/>
+        <pin num="26" name="PB3" type="BiDi"/>
+        <pin num="27" name="PB4" type="BiDi"/>
+        <pin num="28" name="PB5" type="BiDi"/>
+        <pin num="29" name="PB6" type="BiDi"/>
+        <pin num="30" name="PB7" type="BiDi"/>
+        <pin num="31" name="BOOT0" type="input"/>
+        <pin num="32" name="VSS" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="plant_monitor" part="TPS63050RMWR">
+      <description>Régulateur à découpage DC/DC Buck Boost, Ajustable, 2.5 V-5.5Vin, 2.5.5Vout, 500mAout, VQFN-12</description>
+      <docs>https://www.ti.com/lit/ds/symlink/tps63050.pdf?ts=1606205820084&amp;ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FTPS63050</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TPS63050RMWR</field>
+        <field name="Footprint">QFN50P250X250X100-12N</field>
+        <field name="PRICE">None</field>
+        <field name="PACKAGE">VQFN-HR-12 Texas Instruments</field>
+        <field name="DESCRIPTION">Tiny Single Inductor Buck Boost Converter 12-VQFN-HR -40 to 85</field>
+        <field name="MOUSER-PURCHASE-URL">https://snapeda.com/shop?store=Mouser&amp;id=423860</field>
+        <field name="MF">Texas Instruments</field>
+        <field name="AVAILABILITY">Unavailable</field>
+        <field name="TEXAS_INSTRUMENTS-PURCHASE-URL">https://snapeda.com/shop?store=Texas+Instruments&amp;id=423860</field>
+        <field name="DIGIKEY-PURCHASE-URL">https://snapeda.com/shop?store=DigiKey&amp;id=423860</field>
+        <field name="MP">TPS63051RMWR</field>
+        <field name="farnell">3007462</field>
+      </fields>
+      <pins>
+        <pin num="1" name="L1" type="BiDi"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="L2" type="BiDi"/>
+        <pin num="4" name="VOUT" type="output"/>
+        <pin num="5" name="FB" type="input"/>
+        <pin num="6" name="PFM/PWM" type="input"/>
+        <pin num="7" name="SS" type="input"/>
+        <pin num="8" name="PG" type="output"/>
+        <pin num="9" name="GND" type="power_in"/>
+        <pin num="10" name="ILIM0" type="input"/>
+        <pin num="11" name="EN" type="input"/>
+        <pin num="12" name="VIN" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="plant_monitor-rescue" part="SMM4F5.0A-TR-plant_monitor">
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">SMM4F5.0A-TR-plant_monitor</field>
+        <field name="Footprint">DIO_SMM4F5.0A-TR</field>
+        <field name="farnell">1689313</field>
+      </fields>
+      <pins>
+        <pin num="A" name="1" type="passive"/>
+        <pin num="K" name="1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="simon" part="BQ21040">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">BQ21040</field>
+      </fields>
+      <pins>
+        <pin num="1" name="TS" type="passive"/>
+        <pin num="2" name="OUT" type="passive"/>
+        <pin num="3" name="CHG_N" type="passive"/>
+        <pin num="4" name="ISET" type="passive"/>
+        <pin num="5" name="GND" type="passive"/>
+        <pin num="6" name="VIN" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="sweet" part="ANT_M620720">
+      <description>RF ANT 868MHZ/915MHZ CHIP SLD</description>
+      <docs>http://datasheets.avx.com/ethertronics/AVX-E_M620720.pdf</docs>
+      <fields>
+        <field name="Reference">ANT</field>
+        <field name="Value">ANT_M620720</field>
+        <field name="Footprint">sweet:M620720</field>
+        <field name="digikey">939-1066-1-ND</field>
+      </fields>
+      <pins>
+        <pin num="1" name="ANT" type="input"/>
+        <pin num="2" name="NC" type="NotConnected"/>
+        <pin num="3" name="GND" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="sweet" part="WSSFM10R1AT">
+      <docs>https://yadom.fr/media/product-attachment//home/magento///File-1572880994.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">WSSFM10R1AT</field>
+        <field name="Footprint">XCVR_WSSFM10R1AT</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="power_in"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="GND" type="power_in"/>
+        <pin num="4" name="GND" type="power_in"/>
+        <pin num="5" name="NC3/SYSCLK" type="input"/>
+        <pin num="6" name="GIPO8" type="BiDi"/>
+        <pin num="7" name="GPIO7" type="BiDi"/>
+        <pin num="8" name="GPIO6" type="BiDi"/>
+        <pin num="9" name="GPIO5" type="BiDi"/>
+        <pin num="10" name="GPIO4" type="input"/>
+        <pin num="11" name="CPU_LED" type="output"/>
+        <pin num="12" name="RADIO_LED" type="output"/>
+        <pin num="13" name="GPIO9" type="input"/>
+        <pin num="14" name="UARTTX" type="output"/>
+        <pin num="15" name="UARTRX" type="input"/>
+        <pin num="16" name="RXLED/DBG_DATA" type="output"/>
+        <pin num="17" name="TXLED/DBG_CLK" type="output"/>
+        <pin num="18" name="NC4/DBG_EN" type="input"/>
+        <pin num="19" name="RST_N" type="input"/>
+        <pin num="20" name="GND" type="power_in"/>
+        <pin num="21" name="VDD_IO" type="power_in"/>
+        <pin num="22" name="GND" type="power_in"/>
+        <pin num="23" name="GPIO0" type="BiDi"/>
+        <pin num="24" name="GPIO1" type="BiDi"/>
+        <pin num="25" name="GPIO2" type="BiDi"/>
+        <pin num="26" name="GPIO3" type="BiDi"/>
+        <pin num="27" name="GND" type="power_in"/>
+        <pin num="28" name="GND" type="power_in"/>
+        <pin num="29" name="GND" type="power_in"/>
+        <pin num="30" name="RF_IO" type="BiDi"/>
+        <pin num="31" name="GND" type="power_in"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Connector">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Connector.lib</uri>
+    </library>
+    <library logical="Device">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Device.lib</uri>
+    </library>
+    <library logical="Diode">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Diode.lib</uri>
+    </library>
+    <library logical="Mechanical">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Mechanical.lib</uri>
+    </library>
+    <library logical="dk_Transistors-FETs-MOSFETs-Single">
+      <uri>G:/Stream-contenu/99-Kicad/Lib digikey/digikey-symbols/dk_Transistors-FETs-MOSFETs-Single.lib</uri>
+    </library>
+    <library logical="plant_monitor">
+      <uri>G:\Stream-contenu\06_Plant_Monitor\plant-monitor\hardware\plant_monitor.lib</uri>
+    </library>
+    <library logical="plant_monitor-rescue">
+      <uri>G:\Stream-contenu\06_Plant_Monitor\plant-monitor\hardware/plant_monitor-rescue.lib</uri>
+    </library>
+    <library logical="simon">
+      <uri>G:/Stream-contenu/02_Simon/simon-hw/simon/simon.lib</uri>
+    </library>
+    <library logical="sweet">
+      <uri>G:/Stream-contenu/04-Sweet/sweet/sweet/sweet.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="/mcu/BATT_MEASURE">
+      <node ref="R84" pin="2"/>
+      <node ref="TP20" pin="1"/>
+      <node ref="C31" pin="2"/>
+      <node ref="R27" pin="1"/>
+    </net>
+    <net code="2" name="/mcu/SIGFOX_WAKE_UP">
+      <node ref="R99" pin="2"/>
+      <node ref="R96" pin="2"/>
+      <node ref="R32" pin="2"/>
+    </net>
+    <net code="3" name="/mcu/BATT_MEASURE_EN">
+      <node ref="R29" pin="1"/>
+      <node ref="R76" pin="2"/>
+    </net>
+    <net code="4" name="/mcu/SIGFOX_RST_N">
+      <node ref="R30" pin="2"/>
+      <node ref="U9" pin="19"/>
+      <node ref="R91" pin="1"/>
+      <node ref="C35" pin="2"/>
+    </net>
+    <net code="5" name="/mcu/DCDC_POWER_GOOD">
+      <node ref="TP14" pin="1"/>
+      <node ref="R40" pin="1"/>
+      <node ref="U7" pin="8"/>
+      <node ref="R72" pin="2"/>
+    </net>
+    <net code="6" name="/mcu/SIGFOX_RX">
+      <node ref="R33" pin="1"/>
+      <node ref="R92" pin="1"/>
+    </net>
+    <net code="7" name="/mcu/HYGRO_PWM_N">
+      <node ref="R50" pin="1"/>
+      <node ref="R21" pin="2"/>
+    </net>
+    <net code="8" name="/mcu/CHG_STATE_N">
+      <node ref="U6" pin="3"/>
+      <node ref="R100" pin="1"/>
+      <node ref="R69" pin="1"/>
+    </net>
+    <net code="9" name="/mcu/HYGRO_VOLTAGE">
+      <node ref="C5" pin="1"/>
+      <node ref="R26" pin="1"/>
+      <node ref="D1" pin="3"/>
+      <node ref="R37" pin="1"/>
+    </net>
+    <net code="10" name="/mcu/SIGFOX_TX">
+      <node ref="R31" pin="1"/>
+      <node ref="R93" pin="2"/>
+    </net>
+    <net code="11" name="/mcu/LIGHT_INT">
+      <node ref="TP2" pin="1"/>
+      <node ref="R45" pin="1"/>
+      <node ref="U3" pin="4"/>
+      <node ref="R6" pin="1"/>
+    </net>
+    <net code="12" name="/mcu/I2C_SDA">
+      <node ref="R43" pin="1"/>
+      <node ref="R12" pin="2"/>
+      <node ref="R15" pin="2"/>
+      <node ref="R23" pin="2"/>
+      <node ref="R16" pin="2"/>
+    </net>
+    <net code="13" name="/mcu/I2C_SCL">
+      <node ref="R11" pin="1"/>
+      <node ref="R22" pin="1"/>
+      <node ref="R9" pin="1"/>
+      <node ref="R14" pin="1"/>
+      <node ref="R42" pin="1"/>
+    </net>
+    <net code="14" name="/mcu/TEMP_ALERT">
+      <node ref="R44" pin="1"/>
+      <node ref="R7" pin="1"/>
+      <node ref="TP1" pin="1"/>
+    </net>
+    <net code="15" name="GND">
+      <node ref="R99" pin="1"/>
+      <node ref="C32" pin="1"/>
+      <node ref="C33" pin="2"/>
+      <node ref="C15" pin="1"/>
+      <node ref="U3" pin="8"/>
+      <node ref="C30" pin="1"/>
+      <node ref="U7" pin="9"/>
+      <node ref="U6" pin="5"/>
+      <node ref="R17" pin="1"/>
+      <node ref="Q3" pin="2"/>
+      <node ref="L3" pin="2"/>
+      <node ref="R89" pin="2"/>
+      <node ref="D6" pin="1"/>
+      <node ref="D7" pin="1"/>
+      <node ref="C27" pin="2"/>
+      <node ref="J1" pin="1"/>
+      <node ref="J1" pin="3"/>
+      <node ref="J2" pin="1"/>
+      <node ref="J2" pin="3"/>
+      <node ref="R26" pin="2"/>
+      <node ref="C5" pin="2"/>
+      <node ref="C6" pin="2"/>
+      <node ref="R13" pin="1"/>
+      <node ref="R8" pin="1"/>
+      <node ref="R10" pin="1"/>
+      <node ref="C2" pin="2"/>
+      <node ref="C35" pin="1"/>
+      <node ref="U2" pin="4"/>
+      <node ref="U2" pin="5"/>
+      <node ref="C3" pin="2"/>
+      <node ref="C1" pin="2"/>
+      <node ref="U1" pin="4"/>
+      <node ref="R67" pin="2"/>
+      <node ref="C7" pin="1"/>
+      <node ref="C10" pin="2"/>
+      <node ref="R66" pin="1"/>
+      <node ref="C8" pin="1"/>
+      <node ref="J3" pin="5"/>
+      <node ref="D4" pin="1"/>
+      <node ref="J3" pin="6"/>
+      <node ref="BT1" pin="2"/>
+      <node ref="C19" pin="2"/>
+      <node ref="C11" pin="2"/>
+      <node ref="C9" pin="1"/>
+      <node ref="C18" pin="2"/>
+      <node ref="U5" pin="32"/>
+      <node ref="U5" pin="16"/>
+      <node ref="R61" pin="2"/>
+      <node ref="R47" pin="2"/>
+      <node ref="C12" pin="2"/>
+      <node ref="C14" pin="2"/>
+      <node ref="R65" pin="2"/>
+      <node ref="C13" pin="2"/>
+      <node ref="D3" pin="A"/>
+      <node ref="U9" pin="1"/>
+      <node ref="U9" pin="2"/>
+      <node ref="U9" pin="20"/>
+      <node ref="U9" pin="22"/>
+      <node ref="R59" pin="2"/>
+      <node ref="R90" pin="1"/>
+      <node ref="C17" pin="1"/>
+      <node ref="U9" pin="29"/>
+      <node ref="U9" pin="27"/>
+      <node ref="U9" pin="28"/>
+      <node ref="U9" pin="3"/>
+      <node ref="U9" pin="31"/>
+      <node ref="U9" pin="4"/>
+      <node ref="R58" pin="2"/>
+      <node ref="C16" pin="1"/>
+      <node ref="D5" pin="1"/>
+      <node ref="U4" pin="4"/>
+      <node ref="C28" pin="2"/>
+      <node ref="R25" pin="1"/>
+      <node ref="U7" pin="2"/>
+      <node ref="C25" pin="1"/>
+      <node ref="R85" pin="2"/>
+      <node ref="U8" pin="2"/>
+      <node ref="SC1" pin="2"/>
+      <node ref="C31" pin="1"/>
+      <node ref="C4" pin="2"/>
+      <node ref="C29" pin="1"/>
+      <node ref="R79" pin="1"/>
+      <node ref="C21" pin="2"/>
+      <node ref="C23" pin="2"/>
+      <node ref="C22" pin="2"/>
+      <node ref="C20" pin="2"/>
+      <node ref="R86" pin="2"/>
+      <node ref="C24" pin="1"/>
+      <node ref="R70" pin="1"/>
+      <node ref="R71" pin="2"/>
+    </net>
+    <net code="16" name="+3V0">
+      <node ref="R68" pin="1"/>
+      <node ref="R72" pin="1"/>
+      <node ref="R18" pin="2"/>
+      <node ref="R51" pin="1"/>
+      <node ref="U7" pin="4"/>
+      <node ref="C21" pin="1"/>
+      <node ref="C22" pin="1"/>
+      <node ref="R52" pin="1"/>
+      <node ref="R3" pin="1"/>
+      <node ref="FB4" pin="2"/>
+      <node ref="R2" pin="1"/>
+      <node ref="R1" pin="1"/>
+      <node ref="R53" pin="1"/>
+      <node ref="R69" pin="2"/>
+      <node ref="R56" pin="2"/>
+      <node ref="R19" pin="1"/>
+      <node ref="FB2" pin="2"/>
+      <node ref="TP13" pin="1"/>
+      <node ref="FB1" pin="2"/>
+    </net>
+    <net code="17" name="Net-(R67-Pad1)">
+      <node ref="R67" pin="1"/>
+      <node ref="U6" pin="1"/>
+    </net>
+    <net code="18" name="Net-(R66-Pad2)">
+      <node ref="U6" pin="4"/>
+      <node ref="R66" pin="2"/>
+    </net>
+    <net code="19" name="+BATT">
+      <node ref="U6" pin="2"/>
+      <node ref="C18" pin="1"/>
+      <node ref="FB3" pin="2"/>
+      <node ref="R74" pin="2"/>
+      <node ref="Q2" pin="3"/>
+      <node ref="BT1" pin="1"/>
+    </net>
+    <net code="20" name="/power/SOLAR_OUT">
+      <node ref="C19" pin="1"/>
+      <node ref="TP17" pin="1"/>
+      <node ref="R80" pin="1"/>
+      <node ref="R75" pin="2"/>
+      <node ref="R83" pin="1"/>
+      <node ref="U6" pin="6"/>
+      <node ref="C27" pin="1"/>
+    </net>
+    <net code="21" name="Net-(R77-Pad1)">
+      <node ref="R77" pin="1"/>
+      <node ref="U8" pin="8"/>
+    </net>
+    <net code="22" name="Net-(L2-Pad2)">
+      <node ref="L2" pin="2"/>
+      <node ref="U8" pin="3"/>
+    </net>
+    <net code="23" name="Net-(L1-Pad1)">
+      <node ref="U7" pin="1"/>
+      <node ref="L1" pin="1"/>
+    </net>
+    <net code="24" name="Net-(C24-Pad2)">
+      <node ref="U7" pin="7"/>
+      <node ref="C24" pin="2"/>
+    </net>
+    <net code="25" name="Net-(R82-Pad2)">
+      <node ref="R86" pin="1"/>
+      <node ref="R82" pin="2"/>
+      <node ref="R84" pin="1"/>
+    </net>
+    <net code="26" name="Net-(Q3-Pad1)">
+      <node ref="Q3" pin="1"/>
+      <node ref="R79" pin="2"/>
+      <node ref="TP18" pin="1"/>
+      <node ref="R76" pin="1"/>
+    </net>
+    <net code="27" name="Net-(Q2-Pad2)">
+      <node ref="R82" pin="1"/>
+      <node ref="Q2" pin="2"/>
+    </net>
+    <net code="28" name="Net-(Q2-Pad1)">
+      <node ref="R74" pin="1"/>
+      <node ref="Q2" pin="1"/>
+      <node ref="Q3" pin="3"/>
+    </net>
+    <net code="29" name="Net-(R70-Pad2)">
+      <node ref="R70" pin="2"/>
+      <node ref="U7" pin="6"/>
+    </net>
+    <net code="30" name="Net-(R73-Pad1)">
+      <node ref="R73" pin="1"/>
+      <node ref="U7" pin="10"/>
+    </net>
+    <net code="31" name="Net-(C30-Pad2)">
+      <node ref="R85" pin="1"/>
+      <node ref="R80" pin="2"/>
+      <node ref="C30" pin="2"/>
+      <node ref="U8" pin="5"/>
+    </net>
+    <net code="32" name="/power/DCDC_VIN">
+      <node ref="TP12" pin="1"/>
+      <node ref="FB3" pin="1"/>
+      <node ref="U7" pin="11"/>
+      <node ref="C20" pin="1"/>
+      <node ref="U7" pin="12"/>
+      <node ref="R73" pin="2"/>
+    </net>
+    <net code="33" name="Net-(C29-Pad2)">
+      <node ref="TP19" pin="1"/>
+      <node ref="R77" pin="2"/>
+      <node ref="C29" pin="2"/>
+      <node ref="R81" pin="1"/>
+      <node ref="U8" pin="1"/>
+    </net>
+    <net code="34" name="Net-(C25-Pad2)">
+      <node ref="D3" pin="K"/>
+      <node ref="TP16" pin="1"/>
+      <node ref="U8" pin="4"/>
+      <node ref="C25" pin="2"/>
+      <node ref="R78" pin="1"/>
+      <node ref="R75" pin="1"/>
+    </net>
+    <net code="35" name="Net-(C26-Pad1)">
+      <node ref="U8" pin="7"/>
+      <node ref="C26" pin="1"/>
+      <node ref="R78" pin="2"/>
+    </net>
+    <net code="36" name="Net-(C26-Pad2)">
+      <node ref="U8" pin="6"/>
+      <node ref="C26" pin="2"/>
+      <node ref="R83" pin="2"/>
+    </net>
+    <net code="37" name="Net-(C28-Pad1)">
+      <node ref="SC1" pin="1"/>
+      <node ref="C28" pin="1"/>
+      <node ref="R81" pin="2"/>
+      <node ref="TP15" pin="1"/>
+      <node ref="L2" pin="1"/>
+    </net>
+    <net code="38" name="Net-(C23-Pad1)">
+      <node ref="C23" pin="1"/>
+      <node ref="R71" pin="1"/>
+      <node ref="R68" pin="2"/>
+      <node ref="U7" pin="5"/>
+    </net>
+    <net code="39" name="Net-(L1-Pad2)">
+      <node ref="L1" pin="2"/>
+      <node ref="U7" pin="3"/>
+    </net>
+    <net code="40" name="Net-(D1-Pad1)">
+      <node ref="R24" pin="1"/>
+      <node ref="D1" pin="1"/>
+      <node ref="J1" pin="2"/>
+    </net>
+    <net code="41" name="Net-(R22-Pad2)">
+      <node ref="R22" pin="2"/>
+      <node ref="U4" pin="3"/>
+    </net>
+    <net code="42" name="Net-(R23-Pad1)">
+      <node ref="R23" pin="1"/>
+      <node ref="U4" pin="2"/>
+    </net>
+    <net code="43" name="/sensors/VDD_PRES">
+      <node ref="U4" pin="1"/>
+      <node ref="C4" pin="1"/>
+      <node ref="R19" pin="2"/>
+    </net>
+    <net code="44" name="Net-(Q1-Pad2)">
+      <node ref="Q1" pin="2"/>
+      <node ref="R25" pin="2"/>
+      <node ref="R24" pin="2"/>
+    </net>
+    <net code="45" name="Net-(Q1-Pad3)">
+      <node ref="R18" pin="1"/>
+      <node ref="R20" pin="1"/>
+      <node ref="Q1" pin="3"/>
+    </net>
+    <net code="46" name="Net-(Q1-Pad1)">
+      <node ref="R20" pin="2"/>
+      <node ref="Q1" pin="1"/>
+      <node ref="R21" pin="1"/>
+    </net>
+    <net code="47" name="Net-(D1-Pad2)">
+      <node ref="D1" pin="2"/>
+    </net>
+    <net code="48" name="Net-(C6-Pad1)">
+      <node ref="J2" pin="2"/>
+      <node ref="C6" pin="1"/>
+    </net>
+    <net code="49" name="Net-(R4-Pad1)">
+      <node ref="R4" pin="1"/>
+      <node ref="U1" pin="3"/>
+      <node ref="R7" pin="2"/>
+    </net>
+    <net code="50" name="/sensors/VDD_TEMP">
+      <node ref="U1" pin="8"/>
+      <node ref="C1" pin="1"/>
+      <node ref="R1" pin="2"/>
+      <node ref="R4" pin="2"/>
+    </net>
+    <net code="51" name="Net-(R9-Pad2)">
+      <node ref="U1" pin="2"/>
+      <node ref="R9" pin="2"/>
+    </net>
+    <net code="52" name="Net-(R12-Pad1)">
+      <node ref="U1" pin="1"/>
+      <node ref="R12" pin="1"/>
+    </net>
+    <net code="53" name="Net-(R8-Pad2)">
+      <node ref="R8" pin="2"/>
+      <node ref="U1" pin="5"/>
+    </net>
+    <net code="54" name="/sensors/VDD_HUM">
+      <node ref="C3" pin="1"/>
+      <node ref="R3" pin="2"/>
+      <node ref="U2" pin="1"/>
+    </net>
+    <net code="55" name="Net-(R16-Pad1)">
+      <node ref="U2" pin="3"/>
+      <node ref="R16" pin="1"/>
+    </net>
+    <net code="56" name="Net-(R14-Pad2)">
+      <node ref="U2" pin="2"/>
+      <node ref="R14" pin="2"/>
+    </net>
+    <net code="57" name="Net-(R13-Pad2)">
+      <node ref="U1" pin="7"/>
+      <node ref="R13" pin="2"/>
+    </net>
+    <net code="58" name="Net-(R10-Pad2)">
+      <node ref="R10" pin="2"/>
+      <node ref="U1" pin="6"/>
+    </net>
+    <net code="59" name="/sensors/VDD_LIGHT">
+      <node ref="R5" pin="2"/>
+      <node ref="R2" pin="2"/>
+      <node ref="R6" pin="2"/>
+      <node ref="C2" pin="1"/>
+      <node ref="U3" pin="3"/>
+    </net>
+    <net code="60" name="Net-(R5-Pad1)">
+      <node ref="U3" pin="7"/>
+      <node ref="U3" pin="9"/>
+      <node ref="R5" pin="1"/>
+    </net>
+    <net code="61" name="Net-(U3-Pad10)">
+      <node ref="U3" pin="10"/>
+    </net>
+    <net code="62" name="Net-(U3-Pad5)">
+      <node ref="U3" pin="5"/>
+    </net>
+    <net code="63" name="Net-(R17-Pad2)">
+      <node ref="U3" pin="6"/>
+      <node ref="R17" pin="2"/>
+    </net>
+    <net code="64" name="Net-(R15-Pad1)">
+      <node ref="R15" pin="1"/>
+      <node ref="U3" pin="1"/>
+    </net>
+    <net code="65" name="Net-(R11-Pad2)">
+      <node ref="R11" pin="2"/>
+      <node ref="U3" pin="2"/>
+    </net>
+    <net code="66" name="Net-(TP27-Pad1)">
+      <node ref="U9" pin="8"/>
+      <node ref="TP27" pin="1"/>
+    </net>
+    <net code="67" name="Net-(R98-Pad1)">
+      <node ref="R98" pin="1"/>
+      <node ref="U9" pin="16"/>
+      <node ref="TP32" pin="1"/>
+    </net>
+    <net code="68" name="Net-(D6-Pad2)">
+      <node ref="R98" pin="2"/>
+      <node ref="D6" pin="2"/>
+    </net>
+    <net code="69" name="Net-(D7-Pad2)">
+      <node ref="R97" pin="2"/>
+      <node ref="D7" pin="2"/>
+    </net>
+    <net code="70" name="Net-(TP22-Pad1)">
+      <node ref="U9" pin="24"/>
+      <node ref="TP22" pin="1"/>
+    </net>
+    <net code="71" name="Net-(TP21-Pad1)">
+      <node ref="U9" pin="23"/>
+      <node ref="TP21" pin="1"/>
+    </net>
+    <net code="72" name="Net-(TP24-Pad1)">
+      <node ref="TP24" pin="1"/>
+      <node ref="U9" pin="26"/>
+    </net>
+    <net code="73" name="Net-(TP23-Pad1)">
+      <node ref="TP23" pin="1"/>
+      <node ref="U9" pin="25"/>
+    </net>
+    <net code="74" name="Net-(TP26-Pad1)">
+      <node ref="U9" pin="9"/>
+      <node ref="TP26" pin="1"/>
+    </net>
+    <net code="75" name="Net-(TP25-Pad1)">
+      <node ref="TP25" pin="1"/>
+      <node ref="U9" pin="10"/>
+    </net>
+    <net code="76" name="Net-(TP28-Pad1)">
+      <node ref="U9" pin="7"/>
+      <node ref="TP28" pin="1"/>
+    </net>
+    <net code="77" name="Net-(TP29-Pad1)">
+      <node ref="U9" pin="6"/>
+      <node ref="TP29" pin="1"/>
+    </net>
+    <net code="78" name="Net-(R97-Pad1)">
+      <node ref="TP30" pin="1"/>
+      <node ref="U9" pin="17"/>
+      <node ref="R97" pin="1"/>
+    </net>
+    <net code="79" name="Net-(C34-Pad2)">
+      <node ref="R87" pin="1"/>
+      <node ref="C34" pin="2"/>
+      <node ref="L3" pin="1"/>
+    </net>
+    <net code="80" name="Net-(ANT1-Pad1)">
+      <node ref="R87" pin="2"/>
+      <node ref="R90" pin="2"/>
+      <node ref="ANT1" pin="1"/>
+    </net>
+    <net code="81" name="Net-(C34-Pad1)">
+      <node ref="C34" pin="1"/>
+      <node ref="U9" pin="30"/>
+    </net>
+    <net code="82" name="Net-(ANT1-Pad2)">
+      <node ref="ANT1" pin="2"/>
+    </net>
+    <net code="83" name="Net-(ANT1-Pad3)">
+      <node ref="R89" pin="1"/>
+      <node ref="ANT1" pin="3"/>
+    </net>
+    <net code="84" name="Net-(R96-Pad1)">
+      <node ref="R96" pin="1"/>
+      <node ref="U9" pin="13"/>
+    </net>
+    <net code="85" name="/modem/VDD_SIGFOX">
+      <node ref="C33" pin="1"/>
+      <node ref="C32" pin="2"/>
+      <node ref="U9" pin="21"/>
+      <node ref="R91" pin="2"/>
+      <node ref="FB4" pin="1"/>
+    </net>
+    <net code="86" name="Net-(R94-Pad2)">
+      <node ref="U9" pin="11"/>
+      <node ref="R94" pin="2"/>
+    </net>
+    <net code="87" name="Net-(R95-Pad2)">
+      <node ref="R95" pin="2"/>
+      <node ref="U9" pin="12"/>
+    </net>
+    <net code="88" name="Net-(D4-Pad2)">
+      <node ref="D4" pin="2"/>
+      <node ref="R94" pin="1"/>
+    </net>
+    <net code="89" name="Net-(D5-Pad2)">
+      <node ref="D5" pin="2"/>
+      <node ref="R95" pin="1"/>
+    </net>
+    <net code="90" name="Net-(TP31-Pad1)">
+      <node ref="U9" pin="5"/>
+      <node ref="TP31" pin="1"/>
+    </net>
+    <net code="91" name="Net-(TP33-Pad1)">
+      <node ref="U9" pin="18"/>
+      <node ref="TP33" pin="1"/>
+    </net>
+    <net code="92" name="Net-(R92-Pad2)">
+      <node ref="U9" pin="15"/>
+      <node ref="R92" pin="2"/>
+    </net>
+    <net code="93" name="Net-(R93-Pad1)">
+      <node ref="R93" pin="1"/>
+      <node ref="U9" pin="14"/>
+    </net>
+    <net code="94" name="Net-(R44-Pad2)">
+      <node ref="U5" pin="21"/>
+      <node ref="R44" pin="2"/>
+    </net>
+    <net code="95" name="Net-(R33-Pad2)">
+      <node ref="R33" pin="2"/>
+      <node ref="U5" pin="9"/>
+    </net>
+    <net code="96" name="Net-(R27-Pad2)">
+      <node ref="R27" pin="2"/>
+      <node ref="U5" pin="6"/>
+    </net>
+    <net code="97" name="Net-(R29-Pad2)">
+      <node ref="U5" pin="7"/>
+      <node ref="R29" pin="2"/>
+    </net>
+    <net code="98" name="Net-(R45-Pad2)">
+      <node ref="R45" pin="2"/>
+      <node ref="U5" pin="22"/>
+    </net>
+    <net code="99" name="/mcu/HW_VERSION">
+      <node ref="R64" pin="2"/>
+      <node ref="TP11" pin="1"/>
+      <node ref="R35" pin="1"/>
+      <node ref="R65" pin="1"/>
+    </net>
+    <net code="100" name="Net-(R35-Pad2)">
+      <node ref="R35" pin="2"/>
+      <node ref="U5" pin="10"/>
+    </net>
+    <net code="101" name="Net-(R50-Pad2)">
+      <node ref="R50" pin="2"/>
+      <node ref="U5" pin="25"/>
+    </net>
+    <net code="102" name="Net-(R46-Pad2)">
+      <node ref="R46" pin="2"/>
+      <node ref="U5" pin="23"/>
+    </net>
+    <net code="103" name="Net-(R28-Pad1)">
+      <node ref="U5" pin="14"/>
+      <node ref="R28" pin="1"/>
+    </net>
+    <net code="104" name="Net-(R42-Pad2)">
+      <node ref="U5" pin="19"/>
+      <node ref="R42" pin="2"/>
+    </net>
+    <net code="105" name="Net-(R43-Pad2)">
+      <node ref="U5" pin="20"/>
+      <node ref="R43" pin="2"/>
+    </net>
+    <net code="106" name="Net-(R31-Pad2)">
+      <node ref="R31" pin="2"/>
+      <node ref="U5" pin="8"/>
+    </net>
+    <net code="107" name="Net-(D2-Pad4)">
+      <node ref="R60" pin="1"/>
+      <node ref="D2" pin="4"/>
+    </net>
+    <net code="108" name="Net-(D2-Pad3)">
+      <node ref="D2" pin="3"/>
+      <node ref="R62" pin="1"/>
+    </net>
+    <net code="109" name="Net-(D2-Pad2)">
+      <node ref="D2" pin="2"/>
+      <node ref="R63" pin="1"/>
+    </net>
+    <net code="110" name="Net-(R53-Pad2)">
+      <node ref="S3" pin="1"/>
+      <node ref="R53" pin="2"/>
+      <node ref="S3" pin="4"/>
+    </net>
+    <net code="111" name="Net-(R57-Pad1)">
+      <node ref="R61" pin="1"/>
+      <node ref="R57" pin="1"/>
+      <node ref="S3" pin="3"/>
+      <node ref="S3" pin="2"/>
+    </net>
+    <net code="112" name="Net-(R30-Pad1)">
+      <node ref="R30" pin="1"/>
+      <node ref="U5" pin="15"/>
+    </net>
+    <net code="113" name="Net-(D2-Pad1)">
+      <node ref="D2" pin="1"/>
+      <node ref="R56" pin="1"/>
+    </net>
+    <net code="114" name="Net-(X1-Pad2)">
+      <node ref="X1" pin="2"/>
+    </net>
+    <net code="115" name="Net-(X1-Pad3)">
+      <node ref="X1" pin="3"/>
+    </net>
+    <net code="116" name="/mcu/OSC32_IN">
+      <node ref="X1" pin="4"/>
+      <node ref="C13" pin="1"/>
+      <node ref="U5" pin="2"/>
+    </net>
+    <net code="117" name="/mcu/OSC32_OUT">
+      <node ref="U5" pin="3"/>
+      <node ref="C12" pin="1"/>
+      <node ref="X1" pin="1"/>
+    </net>
+    <net code="118" name="Net-(R47-Pad1)">
+      <node ref="R47" pin="1"/>
+      <node ref="TP3" pin="1"/>
+      <node ref="U5" pin="31"/>
+    </net>
+    <net code="119" name="VDD">
+      <node ref="FB1" pin="1"/>
+      <node ref="R48" pin="1"/>
+      <node ref="R64" pin="1"/>
+      <node ref="C9" pin="2"/>
+      <node ref="C8" pin="2"/>
+      <node ref="C7" pin="2"/>
+      <node ref="J3" pin="1"/>
+      <node ref="U5" pin="17"/>
+      <node ref="U5" pin="1"/>
+    </net>
+    <net code="120" name="VDDA">
+      <node ref="C11" pin="1"/>
+      <node ref="C10" pin="1"/>
+      <node ref="U5" pin="5"/>
+      <node ref="FB2" pin="1"/>
+    </net>
+    <net code="121" name="Net-(R49-Pad2)">
+      <node ref="U5" pin="24"/>
+      <node ref="R49" pin="2"/>
+    </net>
+    <net code="122" name="/mcu/LED_GREEN">
+      <node ref="R62" pin="2"/>
+      <node ref="R41" pin="1"/>
+      <node ref="TP9" pin="1"/>
+    </net>
+    <net code="123" name="/mcu/MCU_SWDIO">
+      <node ref="J3" pin="2"/>
+      <node ref="R46" pin="1"/>
+    </net>
+    <net code="124" name="/mcu/MCU_SWCLK">
+      <node ref="R49" pin="1"/>
+      <node ref="J3" pin="3"/>
+    </net>
+    <net code="125" name="/mcu/MCU_RST_N">
+      <node ref="C14" pin="1"/>
+      <node ref="R48" pin="2"/>
+      <node ref="J3" pin="4"/>
+      <node ref="U5" pin="4"/>
+      <node ref="TP4" pin="1"/>
+    </net>
+    <net code="126" name="/mcu/LED_RED">
+      <node ref="R60" pin="2"/>
+      <node ref="R28" pin="2"/>
+      <node ref="TP8" pin="1"/>
+    </net>
+    <net code="127" name="Net-(R36-Pad1)">
+      <node ref="R36" pin="1"/>
+      <node ref="U5" pin="28"/>
+    </net>
+    <net code="128" name="/mcu/BTN_USER_2">
+      <node ref="C16" pin="2"/>
+      <node ref="R55" pin="2"/>
+      <node ref="R36" pin="2"/>
+      <node ref="TP6" pin="1"/>
+    </net>
+    <net code="129" name="Net-(R38-Pad1)">
+      <node ref="U5" pin="29"/>
+      <node ref="R38" pin="1"/>
+    </net>
+    <net code="130" name="/mcu/BTN_USER_3">
+      <node ref="C15" pin="2"/>
+      <node ref="TP5" pin="1"/>
+      <node ref="R54" pin="2"/>
+      <node ref="R38" pin="2"/>
+    </net>
+    <net code="131" name="/mcu/LED_BLUE">
+      <node ref="TP10" pin="1"/>
+      <node ref="R39" pin="1"/>
+      <node ref="R63" pin="2"/>
+    </net>
+    <net code="132" name="Net-(R39-Pad2)">
+      <node ref="U5" pin="12"/>
+      <node ref="R39" pin="2"/>
+    </net>
+    <net code="133" name="Net-(R41-Pad2)">
+      <node ref="R41" pin="2"/>
+      <node ref="U5" pin="13"/>
+    </net>
+    <net code="134" name="/mcu/BTN_USER">
+      <node ref="TP7" pin="1"/>
+      <node ref="R34" pin="2"/>
+      <node ref="C17" pin="2"/>
+      <node ref="R57" pin="2"/>
+    </net>
+    <net code="135" name="Net-(R34-Pad1)">
+      <node ref="U5" pin="27"/>
+      <node ref="R34" pin="1"/>
+    </net>
+    <net code="136" name="Net-(R100-Pad2)">
+      <node ref="U5" pin="18"/>
+      <node ref="R100" pin="2"/>
+    </net>
+    <net code="137" name="Net-(R37-Pad2)">
+      <node ref="R37" pin="2"/>
+      <node ref="U5" pin="11"/>
+    </net>
+    <net code="138" name="Net-(R40-Pad2)">
+      <node ref="R40" pin="2"/>
+      <node ref="U5" pin="30"/>
+    </net>
+    <net code="139" name="Net-(R51-Pad2)">
+      <node ref="S1" pin="4"/>
+      <node ref="R51" pin="2"/>
+      <node ref="S1" pin="1"/>
+    </net>
+    <net code="140" name="Net-(R55-Pad1)">
+      <node ref="R59" pin="1"/>
+      <node ref="S2" pin="3"/>
+      <node ref="S2" pin="2"/>
+      <node ref="R55" pin="1"/>
+    </net>
+    <net code="141" name="Net-(R52-Pad2)">
+      <node ref="S2" pin="1"/>
+      <node ref="R52" pin="2"/>
+      <node ref="S2" pin="4"/>
+    </net>
+    <net code="142" name="Net-(R32-Pad1)">
+      <node ref="U5" pin="26"/>
+      <node ref="R32" pin="1"/>
+    </net>
+    <net code="143" name="Net-(R54-Pad1)">
+      <node ref="S1" pin="2"/>
+      <node ref="S1" pin="3"/>
+      <node ref="R58" pin="1"/>
+      <node ref="R54" pin="1"/>
+    </net>
+  </nets>
+</export>
